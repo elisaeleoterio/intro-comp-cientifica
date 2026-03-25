@@ -3,22 +3,31 @@
 #include <math.h>
 #include <stdlib.h>
 
+/*
+RASCUNHO:
+
+1. Achar LU e armazenar em uma matriz
+2. 
+*/
+
+
+// Eliminação de Gauss sem pivoteamento parcial e armazenando m na matriz
 double **definirMatrizLU(double **A, int n) {
     for (int i = 0; i < n; ++i) {
-        int iMax = i;
-        // Encontra o índice do maior elemento da matriz
-        for (int k = i+1; k < n; ++k) {
-            if (fabs(A[k][i]) > fabs(A[iMax][i])) {
-                iMax = k;
-            }
-        }
+        // int iMax = i;
+        // // Encontra o índice do maior elemento da matriz
+        // for (int k = i+1; k < n; ++k) {
+        //     if (fabs(A[k][i]) > fabs(A[iMax][i])) {
+        //         iMax = k;
+        //     }
+        // }
 
-        if (iMax != i) {
-            double *tmp, aux;
-            tmp = A[i];
-            A[i] = A[iMax];
-            A[iMax] = tmp;
-        }
+        // if (iMax != i) {
+        //     double *tmp, aux;
+        //     tmp = A[i];
+        //     A[i] = A[iMax];
+        //     A[iMax] = tmp;
+        // }
 
         // Armazenando os multiplicadores de Gauss na própria matriz A
         for (int k = i+1; k < n; ++k) {
@@ -88,6 +97,61 @@ void imprimirMatrizResultante(double **A, int n) {
         }
         printf("\n");
     }
+}
+
+void encontrarYX(double **LU, double *b, int n) {
+    // Quantidade de colunas da matriz inversa
+    for (size_t i = 0; i < n; i++) {
+        
+        // Definir b
+        for (size_t j = 0; j < n; j++) {
+            if (j == i)  {
+                b[j] = 1;
+            } else {
+                b[j] =  0;
+            }  
+        }
+        
+        // Eliminação de Gauss para L 
+        for (int i = 0; i < n; ++i) {
+            for (int k = i+1; k < n; ++k) {
+                double m = A[k][i] / A[i][i];
+                A[k][i]  = 0.0;
+                
+                for (int j = i+1; j < n; ++j){
+                    A[k][j] -= A[i][j]*m;
+                }
+                
+                b[k] -= b[i]*m;
+            }
+        }
+
+        // Eliminação de Gauss sem pivoteamento considerando que:
+            // se i > j 
+                // A[i][j] = 0
+            // se j > 1
+                // A[i][j] = A[i][j]
+            // se não
+                // A[i][j] = 1
+        // Retrosubstituição retornando y
+
+        // Retrosubstituição de U retornando x
+
+        // Armazena x na primeira coluna da matriz inversa
+    }
+    
+    // Encontrar y:
+        // eliminacaoGauss considerando a diagonal principal como 1 e acima da diagona principal como 0
+        // Retrosubstituição
+        // y da primeira coluna
+
+    // Encontrar x:
+        // Retrosubstituição com b = y
+        // x da primeira coluna
+
+    // Armazenar o x em uma matriz n x n
+    // Repetir o processo até passar por todas as colunas da matriz identidade
+
 }
 
 int main() {
