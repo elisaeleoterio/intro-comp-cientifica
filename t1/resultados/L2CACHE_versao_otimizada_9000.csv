@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792769601 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],122.077600,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,61737920000
+L2_PF_HIT_IN_L2,PMC1,54393730000
+L2_PF_HIT_IN_L3,PMC2,2382915000
+L2_PF_MISS_IN_L3,PMC3,26230140000
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,38156090000
+RETIRED_INSTRUCTIONS,PMC5,427685700000
+TABLE,Region Sistema Linear.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],122.0776,
+L2 request rate,0.3384,
+L2 miss rate,0.1220,
+L2 miss ratio,0.3606,
+L2 accesses,144744705000,
+L2 hits,92549820000,
+L2 misses,52194885000,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792769601 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],128.095300,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,61797780000
+L2_PF_HIT_IN_L2,PMC1,54410510000
+L2_PF_HIT_IN_L3,PMC2,2383256000
+L2_PF_MISS_IN_L3,PMC3,26239980000
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,38215360000
+RETIRED_INSTRUCTIONS,PMC5,530240800000
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],128.0953,
+L2 request rate,0.2731,
+L2 miss rate,0.0985,
+L2 miss ratio,0.3605,
+L2 accesses,144831526000,
+L2 hits,92625870000,
+L2 misses,52205656000,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792769601 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.212500,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,10425840
+L2_PF_HIT_IN_L2,PMC1,2945133
+L2_PF_HIT_IN_L3,PMC2,39277
+L2_PF_MISS_IN_L3,PMC3,21097
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,10364060
+RETIRED_INSTRUCTIONS,PMC5,3052200
+TABLE,Region Jacobiana,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.2125,
+L2 request rate,4.4005,
+L2 miss rate,0.0400,
+L2 miss ratio,0.0091,
+L2 accesses,13431347,
+L2 hits,13309193,
+L2 misses,122154,

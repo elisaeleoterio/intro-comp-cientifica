@@ -1,0 +1,66 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792768353 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000547,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,3192671
+MAX_CPU_CLOCK,FIXC2,2501274
+RETIRED_INSTRUCTIONS,PMC0,1512394
+CPU_CLOCKS_UNHALTED,PMC1,619137
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,23738
+MERGE,PMC3,0
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0005,
+Runtime unhalted [s],0.0008,
+Clock [MHz],4841.1576,
+CPI,0.4094,
+DP [MFLOP/s],43.4341,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792768353 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000003,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,484402
+MAX_CPU_CLOCK,FIXC2,376884
+RETIRED_INSTRUCTIONS,PMC0,15030
+CPU_CLOCKS_UNHALTED,PMC1,29979
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,77
+MERGE,PMC3,0
+TABLE,Region Jacobiana,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],3.015736e-06,
+Runtime unhalted [s],0.0001,
+Clock [MHz],4874.7747,
+CPI,1.9946,
+DP [MFLOP/s],25.5327,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792768353 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000004,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,481025
+MAX_CPU_CLOCK,FIXC2,380684
+RETIRED_INSTRUCTIONS,PMC0,56601
+CPU_CLOCKS_UNHALTED,PMC1,37094
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,23578
+MERGE,PMC3,0
+TABLE,Region Sistema Linear.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],3.877374e-06,
+Runtime unhalted [s],0.0001,
+Clock [MHz],4792.4693,
+CPI,0.6554,
+DP [MFLOP/s],6080.9197,

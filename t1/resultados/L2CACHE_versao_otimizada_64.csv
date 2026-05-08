@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.791093547 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000016,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,4861
+L2_PF_HIT_IN_L2,PMC1,779
+L2_PF_HIT_IN_L3,PMC2,647
+L2_PF_MISS_IN_L3,PMC3,57
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,3935
+RETIRED_INSTRUCTIONS,PMC5,284391
+TABLE,Region Sistema Linear.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],1.649137e-05,
+L2 request rate,0.0223,
+L2 miss rate,0.0057,
+L2 miss ratio,0.2569,
+L2 accesses,6344,
+L2 hits,4714,
+L2 misses,1630,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.791093547 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000951,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,38694
+L2_PF_HIT_IN_L2,PMC1,9769
+L2_PF_HIT_IN_L3,PMC2,4897
+L2_PF_MISS_IN_L3,PMC3,631
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,31056
+RETIRED_INSTRUCTIONS,PMC5,5767780
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0010,
+L2 request rate,0.0094,
+L2 miss rate,0.0023,
+L2 miss ratio,0.2439,
+L2 accesses,53991,
+L2 hits,40825,
+L2 misses,13166,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.791093547 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000008,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,3806
+L2_PF_HIT_IN_L2,PMC1,614
+L2_PF_HIT_IN_L3,PMC2,203
+L2_PF_MISS_IN_L3,PMC3,467
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,2998
+RETIRED_INSTRUCTIONS,PMC5,23986
+TABLE,Region Jacobiana,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],8.456086e-06,
+L2 request rate,0.2122,
+L2 miss rate,0.0616,
+L2 miss ratio,0.2904,
+L2 accesses,5090,
+L2 hits,3612,
+L2 misses,1478,

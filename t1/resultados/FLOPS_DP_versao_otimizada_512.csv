@@ -1,0 +1,66 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.790429982 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.026626,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,125610700
+MAX_CPU_CLOCK,FIXC2,101365300
+RETIRED_INSTRUCTIONS,PMC0,420233800
+CPU_CLOCKS_UNHALTED,PMC1,112555200
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,89876300
+MERGE,PMC3,0
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0266,
+Runtime unhalted [s],0.0331,
+Clock [MHz],4697.0567,
+CPI,0.2678,
+DP [MFLOP/s],3375.5089,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.790429982 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000726,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,3946942
+MAX_CPU_CLOCK,FIXC2,3125462
+RETIRED_INSTRUCTIONS,PMC0,132445
+CPU_CLOCKS_UNHALTED,PMC1,490626
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,1037
+MERGE,PMC3,0
+TABLE,Region Jacobiana,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0007,
+Runtime unhalted [s],0.0010,
+Clock [MHz],4786.6867,
+CPI,3.7044,
+DP [MFLOP/s],1.4280,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.790429982 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.007291,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,34453830
+MAX_CPU_CLOCK,FIXC2,28033170
+RETIRED_INSTRUCTIONS,PMC0,86206140
+CPU_CLOCKS_UNHALTED,PMC1,33868920
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,89874700
+MERGE,PMC3,0
+TABLE,Region Sistema Linear.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0073,
+Runtime unhalted [s],0.0091,
+Clock [MHz],4658.5823,
+CPI,0.3929,
+DP [MFLOP/s],12327.5982,

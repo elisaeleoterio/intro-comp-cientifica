@@ -1,0 +1,66 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792683741 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],174.822600,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,833916800000
+MAX_CPU_CLOCK,FIXC2,662699000000
+RETIRED_INSTRUCTIONS,PMC0,586340300000
+CPU_CLOCKS_UNHALTED,PMC1,830428000000
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,666816700000
+MERGE,PMC3,0
+TABLE,Region Sistema Linear.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],174.8226,
+Runtime unhalted [s],219.8751,
+Clock [MHz],4772.5780,
+CPI,1.4163,
+DP [MFLOP/s],3814.2477,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792683741 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],182.103600,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,867311600000
+MAX_CPU_CLOCK,FIXC2,690298800000
+RETIRED_INSTRUCTIONS,PMC0,712946600000
+CPU_CLOCKS_UNHALTED,PMC1,860166500000
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,666816800000
+MERGE,PMC3,0
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],182.1036,
+Runtime unhalted [s],228.6802,
+Clock [MHz],4765.2388,
+CPI,1.2065,
+DP [MFLOP/s],3661.7442,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792683741 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.241549,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,1154217000
+MAX_CPU_CLOCK,FIXC2,916151000
+RETIRED_INSTRUCTIONS,PMC0,3391732
+CPU_CLOCKS_UNHALTED,PMC1,161444600
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,20013
+MERGE,PMC3,0
+TABLE,Region Jacobiana,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.2415,
+Runtime unhalted [s],0.3043,
+Clock [MHz],4778.2298,
+CPI,47.5995,
+DP [MFLOP/s],0.0829,

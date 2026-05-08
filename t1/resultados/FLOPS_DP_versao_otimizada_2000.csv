@@ -1,0 +1,66 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.7927399 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.774541,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,3623145000
+MAX_CPU_CLOCK,FIXC2,2938016000
+RETIRED_INSTRUCTIONS,PMC0,9858421000
+CPU_CLOCKS_UNHALTED,PMC1,3452774000
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,5339351000
+MERGE,PMC3,0
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.7745,
+Runtime unhalted [s],0.9553,
+Clock [MHz],4677.1858,
+CPI,0.3502,
+DP [MFLOP/s],6893.5688,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.7927399 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.011515,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,55771200
+MAX_CPU_CLOCK,FIXC2,44098010
+RETIRED_INSTRUCTIONS,PMC0,534261
+CPU_CLOCKS_UNHALTED,PMC1,7037754
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,4013
+MERGE,PMC3,0
+TABLE,Region Jacobiana,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0115,
+Runtime unhalted [s],0.0147,
+Clock [MHz],4796.7166,
+CPI,13.1729,
+DP [MFLOP/s],0.3485,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.7927399 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.485892,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,2288804000
+MAX_CPU_CLOCK,FIXC2,1843398000
+RETIRED_INSTRUCTIONS,PMC0,4787026000
+CPU_CLOCKS_UNHALTED,PMC1,2277911000
+RETIRED_SSE_AVX_FLOPS_ALL,PMC2,5339345000
+MERGE,PMC3,0
+TABLE,Region Sistema Linear.,Group 1 Metric,FLOPS_DP,5
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.4859,
+Runtime unhalted [s],0.6035,
+Clock [MHz],4709.1503,
+CPI,0.4759,
+DP [MFLOP/s],10988.7531,

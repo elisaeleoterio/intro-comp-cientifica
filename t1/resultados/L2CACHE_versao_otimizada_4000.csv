@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792261014 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],10.832620,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,5052554000
+L2_PF_HIT_IN_L2,PMC1,3885237000
+L2_PF_HIT_IN_L3,PMC2,1034127000
+L2_PF_MISS_IN_L3,PMC3,1447065000
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,3611042000
+RETIRED_INSTRUCTIONS,PMC5,58082350000
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],10.8326,
+L2 request rate,0.1966,
+L2 miss rate,0.0675,
+L2 miss ratio,0.3435,
+L2 accesses,11418983000,
+L2 hits,7496279000,
+L2 misses,3922704000,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792261014 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.040293,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,1950362
+L2_PF_HIT_IN_L2,PMC1,479068
+L2_PF_HIT_IN_L3,PMC2,10171
+L2_PF_MISS_IN_L3,PMC3,3861
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,1931560
+RETIRED_INSTRUCTIONS,PMC5,1120289
+TABLE,Region Jacobiana,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0403,
+L2 request rate,2.1811,
+L2 miss rate,0.0293,
+L2 miss ratio,0.0134,
+L2 accesses,2443462,
+L2 hits,2410628,
+L2 misses,32834,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792261014 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],9.685746,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,5040885000
+L2_PF_HIT_IN_L2,PMC1,3881728000
+L2_PF_HIT_IN_L3,PMC2,1034037000
+L2_PF_MISS_IN_L3,PMC3,1445281000
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,3599508000
+RETIRED_INSTRUCTIONS,PMC5,37814560000
+TABLE,Region Sistema Linear.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],9.6857,
+L2 request rate,0.3015,
+L2 miss rate,0.1037,
+L2 miss ratio,0.3439,
+L2 accesses,11401931000,
+L2 hits,7481236000,
+L2 misses,3920695000,

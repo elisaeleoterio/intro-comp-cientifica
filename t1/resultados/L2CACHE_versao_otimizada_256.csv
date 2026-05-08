@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792764531 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000182,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,14532
+L2_PF_HIT_IN_L2,PMC1,1267
+L2_PF_HIT_IN_L3,PMC2,331
+L2_PF_MISS_IN_L3,PMC3,555
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,13055
+RETIRED_INSTRUCTIONS,PMC5,72822
+TABLE,Region Jacobiana,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0002,
+L2 request rate,0.2291,
+L2 miss rate,0.0324,
+L2 miss ratio,0.1416,
+L2 accesses,16685,
+L2 hits,14322,
+L2 misses,2363,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792764531 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000830,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,840259
+L2_PF_HIT_IN_L2,PMC1,736002
+L2_PF_HIT_IN_L3,PMC2,159678
+L2_PF_MISS_IN_L3,PMC3,74
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,811952
+RETIRED_INSTRUCTIONS,PMC5,11775400
+TABLE,Region Sistema Linear.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0008,
+L2 request rate,0.1474,
+L2 miss rate,0.0160,
+L2 miss ratio,0.1083,
+L2 accesses,1736013,
+L2 hits,1547954,
+L2 misses,188059,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792764531 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.005918,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,924343
+L2_PF_HIT_IN_L2,PMC1,755060
+L2_PF_HIT_IN_L3,PMC2,173936
+L2_PF_MISS_IN_L3,PMC3,695
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,887493
+RETIRED_INSTRUCTIONS,PMC5,95854940
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0059,
+L2 request rate,0.0193,
+L2 miss rate,0.0022,
+L2 miss ratio,0.1141,
+L2 accesses,1854034,
+L2 hits,1642553,
+L2 misses,211481,

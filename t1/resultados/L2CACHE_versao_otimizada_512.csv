@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.791497546 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000762,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,46334
+L2_PF_HIT_IN_L2,PMC1,14851
+L2_PF_HIT_IN_L3,PMC2,1034
+L2_PF_MISS_IN_L3,PMC3,464
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,44185
+RETIRED_INSTRUCTIONS,PMC5,132180
+TABLE,Region Jacobiana,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0008,
+L2 request rate,0.4742,
+L2 miss rate,0.0276,
+L2 miss ratio,0.0582,
+L2 accesses,62683,
+L2 hits,59036,
+L2 misses,3647,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.791497546 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.007272,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,6848641
+L2_PF_HIT_IN_L2,PMC1,4497345
+L2_PF_HIT_IN_L3,PMC2,5233299
+L2_PF_MISS_IN_L3,PMC3,67
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,4737353
+RETIRED_INSTRUCTIONS,PMC5,86206130
+TABLE,Region Sistema Linear.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0073,
+L2 request rate,0.1923,
+L2 miss rate,0.0852,
+L2 miss ratio,0.4430,
+L2 accesses,16579352,
+L2 hits,9234698,
+L2 misses,7344654,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.791497546 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L2CACHE,6
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.026817,
+call count,1,
+Event,Counter,HWThread 0
+REQUESTS_TO_L2_GRP1_ALL_NO_PF,PMC0,7084347
+L2_PF_HIT_IN_L2,PMC1,4567686
+L2_PF_HIT_IN_L3,PMC2,5273082
+L2_PF_MISS_IN_L3,PMC3,840
+CORE_TO_L2_CACHE_REQUESTS_HITS,PMC4,4961314
+RETIRED_INSTRUCTIONS,PMC5,420233900
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L2CACHE,7
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0268,
+L2 request rate,0.0403,
+L2 miss rate,0.0176,
+L2 miss ratio,0.4370,
+L2 accesses,16925955,
+L2 hits,9529000,
+L2 misses,7396955,

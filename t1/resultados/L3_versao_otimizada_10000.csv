@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792752398 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],178.249900,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,852844700000
+MAX_CPU_CLOCK,FIXC2,676053200000
+RETIRED_INSTRUCTIONS,PMC0,712946600000
+CPU_CLOCKS_UNHALTED,PMC1,845819700000
+L2_PF_HIT_IN_L3,PMC2,2312863000
+L2_PF_MISS_IN_L3,PMC3,37046480000
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,2971420000
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],178.2499,
+Runtime unhalted [s],224.8617,
+Clock [MHz],4784.5773,
+CPI,1.1864,
+L3 bandwidth [MBytes/s],15198.7117,
+L3 data volume [GBytes],2709.1688,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792752398 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.238559,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,1139898000
+MAX_CPU_CLOCK,FIXC2,905321800
+RETIRED_INSTRUCTIONS,PMC0,3392322
+CPU_CLOCKS_UNHALTED,PMC1,161551200
+L2_PF_HIT_IN_L3,PMC2,41289
+L2_PF_MISS_IN_L3,PMC3,10831
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,73008
+TABLE,Region Jacobiana,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.2386,
+Runtime unhalted [s],0.3005,
+Clock [MHz],4775.4852,
+CPI,47.6226,
+L3 bandwidth [MBytes/s],33.5691,
+L3 data volume [GBytes],0.0080,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792752398 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],171.109000,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,819914700000
+MAX_CPU_CLOCK,FIXC2,648970000000
+RETIRED_INSTRUCTIONS,PMC0,586340300000
+CPU_CLOCKS_UNHALTED,PMC1,816485100000
+L2_PF_HIT_IN_L3,PMC2,2312424000
+L2_PF_MISS_IN_L3,PMC3,37035500000
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,2970004000
+TABLE,Region Sistema Linear.,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],171.1090,
+Runtime unhalted [s],216.1793,
+Clock [MHz],4791.7985,
+CPI,1.3925,
+L3 bandwidth [MBytes/s],15828.1995,
+L3 data volume [GBytes],2708.3474,

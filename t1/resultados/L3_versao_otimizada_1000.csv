@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792724948 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.052182,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,245105600
+MAX_CPU_CLOCK,FIXC2,198388200
+RETIRED_INSTRUCTIONS,PMC0,613453400
+CPU_CLOCKS_UNHALTED,PMC1,243723800
+L2_PF_HIT_IN_L3,PMC2,44691580
+L2_PF_MISS_IN_L3,PMC3,6997
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,9100340
+TABLE,Region Sistema Linear.,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0522,
+Runtime unhalted [s],0.0646,
+Clock [MHz],4685.8539,
+CPI,0.3973,
+L3 bandwidth [MBytes/s],65983.5028,
+L3 data volume [GBytes],3.4431,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792724948 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.124644,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,583437900
+MAX_CPU_CLOCK,FIXC2,473254400
+RETIRED_INSTRUCTIONS,PMC0,1883459000
+CPU_CLOCKS_UNHALTED,PMC1,541727800
+L2_PF_HIT_IN_L3,PMC2,44776700
+L2_PF_MISS_IN_L3,PMC3,59601
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,9126422
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.1246,
+Runtime unhalted [s],0.1538,
+Clock [MHz],4675.7505,
+CPI,0.2876,
+L3 bandwidth [MBytes/s],27707.8261,
+L3 data volume [GBytes],3.4536,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792724948 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.002706,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,13610190
+MAX_CPU_CLOCK,FIXC2,10687420
+RETIRED_INSTRUCTIONS,PMC0,254367
+CPU_CLOCKS_UNHALTED,PMC1,1812973
+L2_PF_HIT_IN_L3,PMC2,2173
+L2_PF_MISS_IN_L3,PMC3,525
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,4188
+TABLE,Region Jacobiana,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0027,
+Runtime unhalted [s],0.0036,
+Clock [MHz],4829.9503,
+CPI,7.1274,
+L3 bandwidth [MBytes/s],162.8482,
+L3 data volume [GBytes],0.0004,

@@ -1,0 +1,72 @@
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792735236 GHz,
+TABLE,Region Método de Newton Inteiro.,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.001858,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,9439840
+MAX_CPU_CLOCK,FIXC2,7443630
+RETIRED_INSTRUCTIONS,PMC0,23054150
+CPU_CLOCKS_UNHALTED,PMC1,6020308
+L2_PF_HIT_IN_L3,PMC2,11980
+L2_PF_MISS_IN_L3,PMC3,1070
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,14616
+TABLE,Region Método de Newton Inteiro.,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0019,
+Runtime unhalted [s],0.0025,
+Clock [MHz],4809.8594,
+CPI,0.2611,
+L3 bandwidth [MBytes/s],952.7213,
+L3 data volume [GBytes],0.0018,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792735236 GHz,
+TABLE,Region Jacobiana,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000039,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,713203
+MAX_CPU_CLOCK,FIXC2,561108
+RETIRED_INSTRUCTIONS,PMC0,56540
+CPU_CLOCKS_UNHALTED,PMC1,74804
+L2_PF_HIT_IN_L3,PMC2,314
+L2_PF_MISS_IN_L3,PMC3,768
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,1141
+TABLE,Region Jacobiana,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],3.873402e-05,
+Runtime unhalted [s],0.0002,
+Clock [MHz],4820.8013,
+CPI,1.3230,
+L3 bandwidth [MBytes/s],3673.0502,
+L3 data volume [GBytes],0.0001,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5800X 8-Core Processor             ,
+CPU type:,AMD K19 (Zen3) architecture,
+CPU clock:,3.792735236 GHz,
+TABLE,Region Sistema Linear.,Group 1 Raw,L3,7
+Region Info,HWThread 0,
+RDTSC Runtime [s],0.000114,
+call count,1,
+Event,Counter,HWThread 0
+ACTUAL_CPU_CLOCK,FIXC1,1078325
+MAX_CPU_CLOCK,FIXC2,855114
+RETIRED_INSTRUCTIONS,PMC0,1728135
+CPU_CLOCKS_UNHALTED,PMC1,567890
+L2_PF_HIT_IN_L3,PMC2,2372
+L2_PF_MISS_IN_L3,PMC3,78
+L2_CACHE_MISS_AFTER_L1_MISS,PMC4,6141
+TABLE,Region Sistema Linear.,Group 1 Metric,L3,6
+Metric,HWThread 0,
+Runtime (RDTSC) [s],0.0001,
+Runtime unhalted [s],0.0003,
+Clock [MHz],4782.7555,
+CPI,0.3286,
+L3 bandwidth [MBytes/s],4819.7198,
+L3 data volume [GBytes],0.0005,
