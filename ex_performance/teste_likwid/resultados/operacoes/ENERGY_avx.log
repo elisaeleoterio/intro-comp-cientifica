@@ -1,0 +1,817 @@
+Resultados para a Métrica: ENERGY
+
+===> N: 128 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666348 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000014,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,755059
+MAX_CPU_CLOCK,FIXC2,320022
+RETIRED_INSTRUCTIONS,PMC0,121850
+CPU_CLOCKS_UNHALTED,PMC1,84435
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.443677e-05,
+Runtime unhalted [s],0.0004,
+Clock [MHz],4239.0427,
+CPI,0.6929,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666348 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000012,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,627458
+MAX_CPU_CLOCK,FIXC2,258174
+RETIRED_INSTRUCTIONS,PMC0,120706
+CPU_CLOCKS_UNHALTED,PMC1,73945
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.241302e-05,
+Runtime unhalted [s],0.0003,
+Clock [MHz],4366.5546,
+CPI,0.6126,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666348 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.001454,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,6858687
+MAX_CPU_CLOCK,FIXC2,2845242
+RETIRED_INSTRUCTIONS,PMC0,16897800
+CPU_CLOCKS_UNHALTED,PMC1,6121793
+RAPL_CORE_ENERGY,PWR0,0.0206
+RAPL_PKG_ENERGY,PWR1,0.0318
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0015,
+Runtime unhalted [s],0.0038,
+Clock [MHz],4331.0033,
+CPI,0.3623,
+Energy Core [J],0.0206,
+Power Core [W],14.1653,
+Energy PKG [J],0.0318,
+Power PKG [W],21.8880,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666348 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.001975,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,9180655
+MAX_CPU_CLOCK,FIXC2,3812040
+RETIRED_INSTRUCTIONS,PMC0,16963740
+CPU_CLOCKS_UNHALTED,PMC1,8367813
+RAPL_CORE_ENERGY,PWR0,0.0231
+RAPL_PKG_ENERGY,PWR1,0.0390
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0020,
+Runtime unhalted [s],0.0051,
+Clock [MHz],4326.9608,
+CPI,0.4933,
+Energy Core [J],0.0231,
+Power Core [W],11.6827,
+Energy PKG [J],0.0390,
+Power PKG [W],19.7648,
+
+===> N: 200 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796659521 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000032,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,856644
+MAX_CPU_CLOCK,FIXC2,326034
+RETIRED_INSTRUCTIONS,PMC0,287738
+CPU_CLOCKS_UNHALTED,PMC1,166586
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],3.158281e-05,
+Runtime unhalted [s],0.0005,
+Clock [MHz],4720.6659,
+CPI,0.5790,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796659521 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000030,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,701101
+MAX_CPU_CLOCK,FIXC2,291762
+RETIRED_INSTRUCTIONS,PMC0,286594
+CPU_CLOCKS_UNHALTED,PMC1,152313
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],3.021966e-05,
+Runtime unhalted [s],0.0004,
+Clock [MHz],4317.3538,
+CPI,0.5315,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796659521 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.005744,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,25406460
+MAX_CPU_CLOCK,FIXC2,10549390
+RETIRED_INSTRUCTIONS,PMC0,64286450
+CPU_CLOCKS_UNHALTED,PMC1,24143660
+RAPL_CORE_ENERGY,PWR0,0.0654
+RAPL_PKG_ENERGY,PWR1,0.0780
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0057,
+Runtime unhalted [s],0.0141,
+Clock [MHz],4326.9571,
+CPI,0.3756,
+Energy Core [J],0.0654,
+Power Core [W],11.3909,
+Energy PKG [J],0.0780,
+Power PKG [W],13.5878,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796659521 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.005696,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,25301460
+MAX_CPU_CLOCK,FIXC2,10489070
+RETIRED_INSTRUCTIONS,PMC0,64447060
+CPU_CLOCKS_UNHALTED,PMC1,23282090
+RAPL_CORE_ENERGY,PWR0,0.0640
+RAPL_PKG_ENERGY,PWR1,0.0817
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0057,
+Runtime unhalted [s],0.0141,
+Clock [MHz],4333.8551,
+CPI,0.3613,
+Energy Core [J],0.0640,
+Power Core [W],11.2316,
+Energy PKG [J],0.0817,
+Power PKG [W],14.3443,
+
+===> N: 300 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796663037 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000069,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,921464
+MAX_CPU_CLOCK,FIXC2,383436
+RETIRED_INSTRUCTIONS,PMC0,638538
+CPU_CLOCKS_UNHALTED,PMC1,331179
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0001,
+Runtime unhalted [s],0.0005,
+Clock [MHz],4317.6966,
+CPI,0.5187,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796663037 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000070,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,873824
+MAX_CPU_CLOCK,FIXC2,363186
+RETIRED_INSTRUCTIONS,PMC0,637395
+CPU_CLOCKS_UNHALTED,PMC1,324575
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0001,
+Runtime unhalted [s],0.0005,
+Clock [MHz],4322.7638,
+CPI,0.5092,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796663037 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.019819,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,86244310
+MAX_CPU_CLOCK,FIXC2,35878070
+RETIRED_INSTRUCTIONS,PMC0,216637300
+CPU_CLOCKS_UNHALTED,PMC1,82498300
+RAPL_CORE_ENERGY,PWR0,0.2471
+RAPL_PKG_ENERGY,PWR1,0.3097
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0198,
+Runtime unhalted [s],0.0480,
+Clock [MHz],4318.8489,
+CPI,0.3808,
+Energy Core [J],0.2471,
+Power Core [W],12.4663,
+Energy PKG [J],0.3097,
+Power PKG [W],15.6268,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796663037 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.019216,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,83547580
+MAX_CPU_CLOCK,FIXC2,34810490
+RETIRED_INSTRUCTIONS,PMC0,216998200
+CPU_CLOCKS_UNHALTED,PMC1,80937170
+RAPL_CORE_ENERGY,PWR0,0.2020
+RAPL_PKG_ENERGY,PWR1,0.2673
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0192,
+Runtime unhalted [s],0.0465,
+Clock [MHz],4312.1154,
+CPI,0.3730,
+Energy Core [J],0.2020,
+Power Core [W],10.5103,
+Energy PKG [J],0.2673,
+Power PKG [W],13.9089,
+
+===> N: 512 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666076 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000210,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1546273
+MAX_CPU_CLOCK,FIXC2,671184
+RETIRED_INSTRUCTIONS,PMC0,1845243
+CPU_CLOCKS_UNHALTED,PMC1,939529
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0002,
+Runtime unhalted [s],0.0009,
+Clock [MHz],4139.1452,
+CPI,0.5092,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666076 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000218,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1495640
+MAX_CPU_CLOCK,FIXC2,626958
+RETIRED_INSTRUCTIONS,PMC0,1844110
+CPU_CLOCKS_UNHALTED,PMC1,958733
+RAPL_CORE_ENERGY,PWR0,0
+RAPL_PKG_ENERGY,PWR1,0
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0002,
+Runtime unhalted [s],0.0008,
+Clock [MHz],4286.0251,
+CPI,0.5199,
+Energy Core [J],0,
+Power Core [W],0,
+Energy PKG [J],0,
+Power PKG [W],0,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666076 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.102424,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,432074500
+MAX_CPU_CLOCK,FIXC2,184356400
+RETIRED_INSTRUCTIONS,PMC0,1075586000
+CPU_CLOCKS_UNHALTED,PMC1,422302600
+RAPL_CORE_ENERGY,PWR0,1.2057
+RAPL_PKG_ENERGY,PWR1,1.5248
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.1024,
+Runtime unhalted [s],0.2405,
+Clock [MHz],4210.8183,
+CPI,0.3926,
+Energy Core [J],1.2057,
+Power Core [W],11.7714,
+Energy PKG [J],1.5248,
+Power PKG [W],14.8876,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79666076 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],1.052721,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4558351000
+MAX_CPU_CLOCK,FIXC2,1891706000
+RETIRED_INSTRUCTIONS,PMC0,1076637000
+CPU_CLOCKS_UNHALTED,PMC1,4500870000
+RAPL_CORE_ENERGY,PWR0,6.2836
+RAPL_PKG_ENERGY,PWR1,12.3320
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.0527,
+Runtime unhalted [s],2.5371,
+Clock [MHz],4329.3252,
+CPI,4.1805,
+Energy Core [J],6.2836,
+Power Core [W],5.9689,
+Energy PKG [J],12.3320,
+Power PKG [W],11.7144,
+
+===> N: 1024 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796665037 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000871,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4557357
+MAX_CPU_CLOCK,FIXC2,1901718
+RETIRED_INSTRUCTIONS,PMC0,7354365
+CPU_CLOCKS_UNHALTED,PMC1,3658529
+RAPL_CORE_ENERGY,PWR0,0.0073
+RAPL_PKG_ENERGY,PWR1,0.0143
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0009,
+Runtime unhalted [s],0.0025,
+Clock [MHz],4305.6037,
+CPI,0.4975,
+Energy Core [J],0.0073,
+Power Core [W],8.3935,
+Energy PKG [J],0.0143,
+Power PKG [W],16.4541,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796665037 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000814,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4258269
+MAX_CPU_CLOCK,FIXC2,1776438
+RETIRED_INSTRUCTIONS,PMC0,7353232
+CPU_CLOCKS_UNHALTED,PMC1,3456575
+RAPL_CORE_ENERGY,PWR0,0.0071
+RAPL_PKG_ENERGY,PWR1,0.0135
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0008,
+Runtime unhalted [s],0.0024,
+Clock [MHz],4306.7549,
+CPI,0.4701,
+Energy Core [J],0.0071,
+Power Core [W],8.7186,
+Energy PKG [J],0.0135,
+Power PKG [W],16.5372,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796665037 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],1.049035,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4405535000
+MAX_CPU_CLOCK,FIXC2,1885139000
+RETIRED_INSTRUCTIONS,PMC0,8597290000
+CPU_CLOCKS_UNHALTED,PMC1,4269531000
+RAPL_CORE_ENERGY,PWR0,10.3052
+RAPL_PKG_ENERGY,PWR1,15.5461
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.0490,
+Runtime unhalted [s],2.4521,
+Clock [MHz],4198.7730,
+CPI,0.4966,
+Energy Core [J],10.3052,
+Power Core [W],9.8235,
+Energy PKG [J],15.5461,
+Power PKG [W],14.8194,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796665037 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],7.689660,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,33280600000
+MAX_CPU_CLOCK,FIXC2,13816130000
+RETIRED_INSTRUCTIONS,PMC0,8601494000
+CPU_CLOCKS_UNHALTED,PMC1,32748040000
+RAPL_CORE_ENERGY,PWR0,44.9608
+RAPL_PKG_ENERGY,PWR1,96.1699
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],7.6897,
+Runtime unhalted [s],18.5235,
+Clock [MHz],4327.8465,
+CPI,3.8073,
+Energy Core [J],44.9608,
+Power Core [W],5.8469,
+Energy PKG [J],96.1699,
+Power PKG [W],12.5064,
+
+===> N: 2000 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669911 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003114,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,14331540
+MAX_CPU_CLOCK,FIXC2,5948244
+RETIRED_INSTRUCTIONS,PMC0,28022160
+CPU_CLOCKS_UNHALTED,PMC1,13118440
+RAPL_CORE_ENERGY,PWR0,0.0251
+RAPL_PKG_ENERGY,PWR1,0.0439
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0031,
+Runtime unhalted [s],0.0080,
+Clock [MHz],4328.8484,
+CPI,0.4681,
+Energy Core [J],0.0251,
+Power Core [W],8.0545,
+Energy PKG [J],0.0439,
+Power PKG [W],14.1100,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669911 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003099,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,14290400
+MAX_CPU_CLOCK,FIXC2,5927508
+RETIRED_INSTRUCTIONS,PMC0,28021000
+CPU_CLOCKS_UNHALTED,PMC1,13027530
+RAPL_CORE_ENERGY,PWR0,0.0354
+RAPL_PKG_ENERGY,PWR1,0.0451
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0031,
+Runtime unhalted [s],0.0080,
+Clock [MHz],4331.5221,
+CPI,0.4649,
+Energy Core [J],0.0354,
+Power Core [W],11.4125,
+Energy PKG [J],0.0451,
+Power PKG [W],14.5487,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669911 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],18.382280,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,79485950000
+MAX_CPU_CLOCK,FIXC2,33027060000
+RETIRED_INSTRUCTIONS,PMC0,64028050000
+CPU_CLOCKS_UNHALTED,PMC1,78108200000
+RAPL_CORE_ENERGY,PWR0,135.0988
+RAPL_PKG_ENERGY,PWR1,224.3309
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],18.3823,
+Runtime unhalted [s],44.2407,
+Clock [MHz],4324.0305,
+CPI,1.2199,
+Energy Core [J],135.0988,
+Power Core [W],7.3494,
+Energy PKG [J],224.3309,
+Power PKG [W],12.2036,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669911 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],10.806040,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,46462040000
+MAX_CPU_CLOCK,FIXC2,19415130000
+RETIRED_INSTRUCTIONS,PMC0,64044040000
+CPU_CLOCKS_UNHALTED,PMC1,45163980000
+RAPL_CORE_ENERGY,PWR0,94.4223
+RAPL_PKG_ENERGY,PWR1,155.8140
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],10.8060,
+Runtime unhalted [s],25.8601,
+Clock [MHz],4299.5823,
+CPI,0.7052,
+Energy Core [J],94.4223,
+Power Core [W],8.7379,
+Energy PKG [J],155.8140,
+Power PKG [W],14.4192,
+
+===> N: 2048 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669198 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003424,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,15728760
+MAX_CPU_CLOCK,FIXC2,6558246
+RETIRED_INSTRUCTIONS,PMC0,29382670
+CPU_CLOCKS_UNHALTED,PMC1,13720380
+RAPL_CORE_ENERGY,PWR0,0.0258
+RAPL_PKG_ENERGY,PWR1,0.0449
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0034,
+Runtime unhalted [s],0.0088,
+Clock [MHz],4308.9842,
+CPI,0.4670,
+Energy Core [J],0.0258,
+Power Core [W],7.5223,
+Energy PKG [J],0.0449,
+Power PKG [W],13.1195,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669198 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003238,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,14739480
+MAX_CPU_CLOCK,FIXC2,6148062
+RETIRED_INSTRUCTIONS,PMC0,29381520
+CPU_CLOCKS_UNHALTED,PMC1,13651440
+RAPL_CORE_ENERGY,PWR0,0.0266
+RAPL_PKG_ENERGY,PWR1,0.0449
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0032,
+Runtime unhalted [s],0.0082,
+Clock [MHz],4307.3687,
+CPI,0.4646,
+Energy Core [J],0.0266,
+Power Core [W],8.2054,
+Energy PKG [J],0.0449,
+Power PKG [W],13.8610,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669198 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],22.950760,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,99031970000
+MAX_CPU_CLOCK,FIXC2,41235050000
+RETIRED_INSTRUCTIONS,PMC0,68748890000
+CPU_CLOCKS_UNHALTED,PMC1,97453400000
+RAPL_CORE_ENERGY,PWR0,162.7503
+RAPL_PKG_ENERGY,PWR1,279.4489
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],22.9508,
+Runtime unhalted [s],55.1198,
+Clock [MHz],4314.9624,
+CPI,1.4175,
+Energy Core [J],162.7503,
+Power Core [W],7.0913,
+Energy PKG [J],279.4489,
+Power PKG [W],12.1760,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796669198 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],144.490200,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,623114900000
+MAX_CPU_CLOCK,FIXC2,259600400000
+RETIRED_INSTRUCTIONS,PMC0,68765790000
+CPU_CLOCKS_UNHALTED,PMC1,615044400000
+RAPL_CORE_ENERGY,PWR0,976.2077
+RAPL_PKG_ENERGY,PWR1,1767.0020
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],144.4902,
+Runtime unhalted [s],346.8167,
+Clock [MHz],4312.5178,
+CPI,8.9440,
+Energy Core [J],976.2077,
+Power Core [W],6.7562,
+Energy PKG [J],1767.0020,
+Power PKG [W],12.2292,
+
+===> N: 4092 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796671471 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.013284,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,57971420
+MAX_CPU_CLOCK,FIXC2,24230470
+RETIRED_INSTRUCTIONS,PMC0,117250200
+CPU_CLOCKS_UNHALTED,PMC1,54601130
+RAPL_CORE_ENERGY,PWR0,0.1270
+RAPL_PKG_ENERGY,PWR1,0.2082
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0133,
+Runtime unhalted [s],0.0323,
+Clock [MHz],4298.5380,
+CPI,0.4657,
+Energy Core [J],0.1270,
+Power Core [W],9.5639,
+Energy PKG [J],0.2082,
+Power PKG [W],15.6749,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796671471 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.013252,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,57636130
+MAX_CPU_CLOCK,FIXC2,24156310
+RETIRED_INSTRUCTIONS,PMC0,117249000
+CPU_CLOCKS_UNHALTED,PMC1,54841360
+RAPL_CORE_ENERGY,PWR0,0.1165
+RAPL_PKG_ENERGY,PWR1,0.1991
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0133,
+Runtime unhalted [s],0.0321,
+Clock [MHz],4286.7967,
+CPI,0.4677,
+Energy Core [J],0.1165,
+Power Core [W],8.7887,
+Energy PKG [J],0.1991,
+Power PKG [W],15.0201,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796671471 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],300.396900,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1287794000000
+MAX_CPU_CLOCK,FIXC2,539712300000
+RETIRED_INSTRUCTIONS,PMC0,548264400000
+CPU_CLOCKS_UNHALTED,PMC1,1269548000000
+RAPL_CORE_ENERGY,PWR0,2099.6840
+RAPL_PKG_ENERGY,PWR1,3869.4340
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],300.3969,
+Runtime unhalted [s],716.7665,
+Clock [MHz],4286.9928,
+CPI,2.3156,
+Energy Core [J],2099.6840,
+Power Core [W],6.9897,
+Energy PKG [J],3869.4340,
+Power PKG [W],12.8811,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796671471 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,ENERGY,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],270.934900,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1159431000000
+MAX_CPU_CLOCK,FIXC2,486779600000
+RETIRED_INSTRUCTIONS,PMC0,548331300000
+CPU_CLOCKS_UNHALTED,PMC1,1146411000000
+RAPL_CORE_ENERGY,PWR0,1847.9630
+RAPL_PKG_ENERGY,PWR1,3255.3560
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,ENERGY,8
+Metric,HWThread 7,
+Runtime (RDTSC) [s],270.9349,
+Runtime unhalted [s],645.3217,
+Clock [MHz],4279.3835,
+CPI,2.0907,
+Energy Core [J],1847.9630,
+Power Core [W],6.8207,
+Energy PKG [J],3255.3560,
+Power PKG [W],12.0153,

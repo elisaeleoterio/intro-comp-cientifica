@@ -1,0 +1,849 @@
+Resultados para a Métrica: L3
+
+===> N: 128 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796680604 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000013,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,695338
+MAX_CPU_CLOCK,FIXC2,291168
+RETIRED_INSTRUCTIONS,PMC0,120729
+CPU_CLOCKS_UNHALTED,PMC1,78511
+L3_ACCESS,CPMC0,8005
+L3_MISS,CPMC1,3085
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.251309e-05,
+Runtime unhalted [s],0.0004,
+Clock [MHz],4290.6511,
+CPI,0.6503,
+L3 access bandwidth [MBytes/s],40942.7248,
+L3 access data volume [GBytes],0.0005,
+L3 access rate [%],6.6306,
+L3 miss rate [%],2.5553,
+L3 miss ratio [%],38.5384,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796680604 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000012,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,649660
+MAX_CPU_CLOCK,FIXC2,270828
+RETIRED_INSTRUCTIONS,PMC0,120772
+CPU_CLOCKS_UNHALTED,PMC1,73776
+L3_ACCESS,CPMC0,15848
+L3_MISS,CPMC1,5244
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.202218e-05,
+Runtime unhalted [s],0.0004,
+Clock [MHz],4309.8628,
+CPI,0.6109,
+L3 access bandwidth [MBytes/s],84366.7288,
+L3 access data volume [GBytes],0.0010,
+L3 access rate [%],13.1222,
+L3 miss rate [%],4.3421,
+L3 miss ratio [%],33.0893,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796680604 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.001651,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,7623697
+MAX_CPU_CLOCK,FIXC2,3201642
+RETIRED_INSTRUCTIONS,PMC0,16897850
+CPU_CLOCKS_UNHALTED,PMC1,6092866
+L3_ACCESS,CPMC0,49281
+L3_MISS,CPMC1,10410
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0017,
+Runtime unhalted [s],0.0042,
+Clock [MHz],4278.2262,
+CPI,0.3606,
+L3 access bandwidth [MBytes/s],1910.8974,
+L3 access data volume [GBytes],0.0032,
+L3 access rate [%],0.2916,
+L3 miss rate [%],0.0616,
+L3 miss ratio [%],21.1238,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796680604 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.002005,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,9088406
+MAX_CPU_CLOCK,FIXC2,3828348
+RETIRED_INSTRUCTIONS,PMC0,16963770
+CPU_CLOCKS_UNHALTED,PMC1,8369832
+L3_ACCESS,CPMC0,45028
+L3_MISS,CPMC1,7321
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0020,
+Runtime unhalted [s],0.0051,
+Clock [MHz],4265.2765,
+CPI,0.4934,
+L3 access bandwidth [MBytes/s],1437.2031,
+L3 access data volume [GBytes],0.0029,
+L3 access rate [%],0.2654,
+L3 miss rate [%],0.0432,
+L3 miss ratio [%],16.2588,
+
+===> N: 200 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79652706 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000032,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,761366
+MAX_CPU_CLOCK,FIXC2,318888
+RETIRED_INSTRUCTIONS,PMC0,286617
+CPU_CLOCKS_UNHALTED,PMC1,164733
+L3_ACCESS,CPMC0,11411
+L3_MISS,CPMC1,5662
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],3.195213e-05,
+Runtime unhalted [s],0.0004,
+Clock [MHz],4289.3261,
+CPI,0.5747,
+L3 access bandwidth [MBytes/s],22856.1914,
+L3 access data volume [GBytes],0.0007,
+L3 access rate [%],3.9813,
+L3 miss rate [%],1.9755,
+L3 miss ratio [%],49.6188,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79652706 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000031,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,707095
+MAX_CPU_CLOCK,FIXC2,292302
+RETIRED_INSTRUCTIONS,PMC0,286645
+CPU_CLOCKS_UNHALTED,PMC1,155170
+L3_ACCESS,CPMC0,10196
+L3_MISS,CPMC1,5307
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],3.078987e-05,
+Runtime unhalted [s],0.0004,
+Clock [MHz],4345.9001,
+CPI,0.5413,
+L3 access bandwidth [MBytes/s],21193.4640,
+L3 access data volume [GBytes],0.0007,
+L3 access rate [%],3.5570,
+L3 miss rate [%],1.8514,
+L3 miss ratio [%],52.0498,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79652706 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.005815,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,25465130
+MAX_CPU_CLOCK,FIXC2,10682890
+RETIRED_INSTRUCTIONS,PMC0,64286500
+CPU_CLOCKS_UNHALTED,PMC1,24162820
+L3_ACCESS,CPMC0,193396
+L3_MISS,CPMC1,13306
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0058,
+Runtime unhalted [s],0.0142,
+Clock [MHz],4282.4362,
+CPI,0.3759,
+L3 access bandwidth [MBytes/s],2128.3963,
+L3 access data volume [GBytes],0.0124,
+L3 access rate [%],0.3008,
+L3 miss rate [%],0.0207,
+L3 miss ratio [%],6.8802,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.79652706 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.005791,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,25397990
+MAX_CPU_CLOCK,FIXC2,10663580
+RETIRED_INSTRUCTIONS,PMC0,64447110
+CPU_CLOCKS_UNHALTED,PMC1,23271610
+L3_ACCESS,CPMC0,153899
+L3_MISS,CPMC1,21839
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0058,
+Runtime unhalted [s],0.0141,
+Clock [MHz],4278.8797,
+CPI,0.3611,
+L3 access bandwidth [MBytes/s],1700.9144,
+L3 access data volume [GBytes],0.0098,
+L3 access rate [%],0.2388,
+L3 miss rate [%],0.0339,
+L3 miss ratio [%],14.1905,
+
+===> N: 300 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796672339 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000069,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,941258
+MAX_CPU_CLOCK,FIXC2,392472
+RETIRED_INSTRUCTIONS,PMC0,637417
+CPU_CLOCKS_UNHALTED,PMC1,324606
+L3_ACCESS,CPMC0,19037
+L3_MISS,CPMC1,11894
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0001,
+Runtime unhalted [s],0.0005,
+Clock [MHz],4308.9245,
+CPI,0.5093,
+L3 access bandwidth [MBytes/s],17560.1679,
+L3 access data volume [GBytes],0.0012,
+L3 access rate [%],2.9866,
+L3 miss rate [%],1.8660,
+L3 miss ratio [%],62.4783,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796672339 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000070,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,862207
+MAX_CPU_CLOCK,FIXC2,358848
+RETIRED_INSTRUCTIONS,PMC0,637446
+CPU_CLOCKS_UNHALTED,PMC1,321264
+L3_ACCESS,CPMC0,18453
+L3_MISS,CPMC1,11578
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0001,
+Runtime unhalted [s],0.0005,
+Clock [MHz],4316.8792,
+CPI,0.5040,
+L3 access bandwidth [MBytes/s],16779.1059,
+L3 access data volume [GBytes],0.0012,
+L3 access rate [%],2.8948,
+L3 miss rate [%],1.8163,
+L3 miss ratio [%],62.7432,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796672339 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.020132,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,86469230
+MAX_CPU_CLOCK,FIXC2,36419740
+RETIRED_INSTRUCTIONS,PMC0,216637300
+CPU_CLOCKS_UNHALTED,PMC1,82571170
+L3_ACCESS,CPMC0,2982885
+L3_MISS,CPMC1,40820
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0201,
+Runtime unhalted [s],0.0481,
+Clock [MHz],4265.7326,
+CPI,0.3811,
+L3 access bandwidth [MBytes/s],9482.5052,
+L3 access data volume [GBytes],0.1909,
+L3 access rate [%],1.3769,
+L3 miss rate [%],0.0188,
+L3 miss ratio [%],1.3685,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796672339 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.019701,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,83361080
+MAX_CPU_CLOCK,FIXC2,35675600
+RETIRED_INSTRUCTIONS,PMC0,216998200
+CPU_CLOCKS_UNHALTED,PMC1,80734000
+L3_ACCESS,CPMC0,2736726
+L3_MISS,CPMC1,49473
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0197,
+Runtime unhalted [s],0.0464,
+Clock [MHz],4198.1788,
+CPI,0.3720,
+L3 access bandwidth [MBytes/s],8890.2321,
+L3 access data volume [GBytes],0.1752,
+L3 access rate [%],1.2612,
+L3 miss rate [%],0.0228,
+L3 miss ratio [%],1.8077,
+
+===> N: 512 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796675126 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000210,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1545387
+MAX_CPU_CLOCK,FIXC2,647262
+RETIRED_INSTRUCTIONS,PMC0,1844122
+CPU_CLOCKS_UNHALTED,PMC1,925351
+L3_ACCESS,CPMC0,41532
+L3_MISS,CPMC1,33715
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0002,
+Runtime unhalted [s],0.0009,
+Clock [MHz],4289.6978,
+CPI,0.5018,
+L3 access bandwidth [MBytes/s],12685.3033,
+L3 access data volume [GBytes],0.0027,
+L3 access rate [%],2.2521,
+L3 miss rate [%],1.8282,
+L3 miss ratio [%],81.1784,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796675126 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000215,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1510799
+MAX_CPU_CLOCK,FIXC2,628686
+RETIRED_INSTRUCTIONS,PMC0,1844150
+CPU_CLOCKS_UNHALTED,PMC1,946086
+L3_ACCESS,CPMC0,40597
+L3_MISS,CPMC1,33323
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0002,
+Runtime unhalted [s],0.0008,
+Clock [MHz],4317.6005,
+CPI,0.5130,
+L3 access bandwidth [MBytes/s],12091.0151,
+L3 access data volume [GBytes],0.0026,
+L3 access rate [%],2.2014,
+L3 miss rate [%],1.8070,
+L3 miss ratio [%],82.0824,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796675126 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.105996,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,431834300
+MAX_CPU_CLOCK,FIXC2,190775400
+RETIRED_INSTRUCTIONS,PMC0,1075586000
+CPU_CLOCKS_UNHALTED,PMC1,421513100
+L3_ACCESS,CPMC0,18365960
+L3_MISS,CPMC1,138056
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.1060,
+Runtime unhalted [s],0.2404,
+Clock [MHz],4066.9077,
+CPI,0.3919,
+L3 access bandwidth [MBytes/s],11089.2477,
+L3 access data volume [GBytes],1.1754,
+L3 access rate [%],1.7075,
+L3 miss rate [%],0.0128,
+L3 miss ratio [%],0.7517,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796675126 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],1.119004,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4771368000
+MAX_CPU_CLOCK,FIXC2,2010817000
+RETIRED_INSTRUCTIONS,PMC0,1076637000
+CPU_CLOCKS_UNHALTED,PMC1,4705357000
+L3_ACCESS,CPMC0,272559100
+L3_MISS,CPMC1,6087500
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.1190,
+Runtime unhalted [s],2.6557,
+Clock [MHz],4263.2414,
+CPI,4.3704,
+L3 access bandwidth [MBytes/s],15588.6685,
+L3 access data volume [GBytes],17.4438,
+L3 access rate [%],25.3158,
+L3 miss rate [%],0.5654,
+L3 miss ratio [%],2.2335,
+
+===> N: 1024 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674429 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000850,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4397339
+MAX_CPU_CLOCK,FIXC2,1857474
+RETIRED_INSTRUCTIONS,PMC0,7353244
+CPU_CLOCKS_UNHALTED,PMC1,3601887
+L3_ACCESS,CPMC0,176068
+L3_MISS,CPMC1,158787
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0008,
+Runtime unhalted [s],0.0024,
+Clock [MHz],4253.4036,
+CPI,0.4898,
+L3 access bandwidth [MBytes/s],13264.5188,
+L3 access data volume [GBytes],0.0113,
+L3 access rate [%],2.3944,
+L3 miss rate [%],2.1594,
+L3 miss ratio [%],90.1850,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674429 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000827,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4396454
+MAX_CPU_CLOCK,FIXC2,1848060
+RETIRED_INSTRUCTIONS,PMC0,7353271
+CPU_CLOCKS_UNHALTED,PMC1,3584329
+L3_ACCESS,CPMC0,153040
+L3_MISS,CPMC1,142497
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0008,
+Runtime unhalted [s],0.0024,
+Clock [MHz],4274.2100,
+CPI,0.4874,
+L3 access bandwidth [MBytes/s],11840.9124,
+L3 access data volume [GBytes],0.0098,
+L3 access rate [%],2.0813,
+L3 miss rate [%],1.9379,
+L3 miss ratio [%],93.1110,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674429 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],1.067025,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,4360365000
+MAX_CPU_CLOCK,FIXC2,1917473000
+RETIRED_INSTRUCTIONS,PMC0,8597290000
+CPU_CLOCKS_UNHALTED,PMC1,4223386000
+L3_ACCESS,CPMC0,166379000
+L3_MISS,CPMC1,135511500
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.0670,
+Runtime unhalted [s],2.4269,
+Clock [MHz],4085.6671,
+CPI,0.4912,
+L3 access bandwidth [MBytes/s],9979.3875,
+L3 access data volume [GBytes],10.6483,
+L3 access rate [%],1.9352,
+L3 miss rate [%],1.5762,
+L3 miss ratio [%],81.4475,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674429 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],10.457110,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,44530780000
+MAX_CPU_CLOCK,FIXC2,18788390000
+RETIRED_INSTRUCTIONS,PMC0,8601497000
+CPU_CLOCKS_UNHALTED,PMC1,43830950000
+L3_ACCESS,CPMC0,1381703000
+L3_MISS,CPMC1,1099896000
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],10.4571,
+Runtime unhalted [s],24.7851,
+Clock [MHz],4258.3379,
+CPI,5.0957,
+L3 access bandwidth [MBytes/s],8456.3509,
+L3 access data volume [GBytes],88.4290,
+L3 access rate [%],16.0635,
+L3 miss rate [%],12.7873,
+L3 miss ratio [%],79.6044,
+
+===> N: 2000 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674762 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003174,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,14334340
+MAX_CPU_CLOCK,FIXC2,6053976
+RETIRED_INSTRUCTIONS,PMC0,28021040
+CPU_CLOCKS_UNHALTED,PMC1,13127650
+L3_ACCESS,CPMC0,532307
+L3_MISS,CPMC1,517261
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0032,
+Runtime unhalted [s],0.0080,
+Clock [MHz],4254.0880,
+CPI,0.4685,
+L3 access bandwidth [MBytes/s],10734.7283,
+L3 access data volume [GBytes],0.0341,
+L3 access rate [%],1.8997,
+L3 miss rate [%],1.8460,
+L3 miss ratio [%],97.1734,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674762 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003195,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,14376360
+MAX_CPU_CLOCK,FIXC2,6069582
+RETIRED_INSTRUCTIONS,PMC0,28021070
+CPU_CLOCKS_UNHALTED,PMC1,13126270
+L3_ACCESS,CPMC0,526411
+L3_MISS,CPMC1,513600
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0032,
+Runtime unhalted [s],0.0080,
+Clock [MHz],4255.5885,
+CPI,0.4684,
+L3 access bandwidth [MBytes/s],10545.2869,
+L3 access data volume [GBytes],0.0337,
+L3 access rate [%],1.8786,
+L3 miss rate [%],1.8329,
+L3 miss ratio [%],97.5664,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674762 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],18.519980,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,78889200000
+MAX_CPU_CLOCK,FIXC2,33274590000
+RETIRED_INSTRUCTIONS,PMC0,64028050000
+CPU_CLOCKS_UNHALTED,PMC1,77546330000
+L3_ACCESS,CPMC0,1303713000
+L3_MISS,CPMC1,1024037000
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],18.5200,
+Runtime unhalted [s],43.9084,
+Clock [MHz],4259.6538,
+CPI,1.2111,
+L3 access bandwidth [MBytes/s],4505.2766,
+L3 access data volume [GBytes],83.4376,
+L3 access rate [%],2.0362,
+L3 miss rate [%],1.5994,
+L3 miss ratio [%],78.5477,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796674762 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],10.159540,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,42733890000
+MAX_CPU_CLOCK,FIXC2,18253710000
+RETIRED_INSTRUCTIONS,PMC0,64044040000
+CPU_CLOCKS_UNHALTED,PMC1,41531920000
+L3_ACCESS,CPMC0,1136596000
+L3_MISS,CPMC1,1021305000
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],10.1595,
+Runtime unhalted [s],23.7850,
+Clock [MHz],4206.2080,
+CPI,0.6485,
+L3 access bandwidth [MBytes/s],7159.9840,
+L3 access data volume [GBytes],72.7421,
+L3 access rate [%],1.7747,
+L3 miss rate [%],1.5947,
+L3 miss ratio [%],89.8565,
+
+===> N: 2048 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796679224 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003393,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,15389840
+MAX_CPU_CLOCK,FIXC2,6479370
+RETIRED_INSTRUCTIONS,PMC0,29381550
+CPU_CLOCKS_UNHALTED,PMC1,13799580
+L3_ACCESS,CPMC0,558980
+L3_MISS,CPMC1,540618
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0034,
+Runtime unhalted [s],0.0086,
+Clock [MHz],4267.4837,
+CPI,0.4697,
+L3 access bandwidth [MBytes/s],10544.7469,
+L3 access data volume [GBytes],0.0358,
+L3 access rate [%],1.9025,
+L3 miss rate [%],1.8400,
+L3 miss ratio [%],96.7151,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796679224 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.003362,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,15070920
+MAX_CPU_CLOCK,FIXC2,6354216
+RETIRED_INSTRUCTIONS,PMC0,29381560
+CPU_CLOCKS_UNHALTED,PMC1,13849200
+L3_ACCESS,CPMC0,553400
+L3_MISS,CPMC1,540289
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0034,
+Runtime unhalted [s],0.0084,
+Clock [MHz],4261.3611,
+CPI,0.4714,
+L3 access bandwidth [MBytes/s],10534.5501,
+L3 access data volume [GBytes],0.0354,
+L3 access rate [%],1.8835,
+L3 miss rate [%],1.8389,
+L3 miss ratio [%],97.6308,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796679224 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],22.877780,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,97349190000
+MAX_CPU_CLOCK,FIXC2,41104210000
+RETIRED_INSTRUCTIONS,PMC0,68748890000
+CPU_CLOCKS_UNHALTED,PMC1,95765320000
+L3_ACCESS,CPMC0,1468502000
+L3_MISS,CPMC1,1097603000
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],22.8778,
+Runtime unhalted [s],54.1828,
+Clock [MHz],4255.1667,
+CPI,1.3930,
+L3 access bandwidth [MBytes/s],4108.0965,
+L3 access data volume [GBytes],93.9841,
+L3 access rate [%],2.1360,
+L3 miss rate [%],1.5965,
+L3 miss ratio [%],74.7430,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.796679224 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],144.350500,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,613478800000
+MAX_CPU_CLOCK,FIXC2,259350500000
+RETIRED_INSTRUCTIONS,PMC0,68765790000
+CPU_CLOCKS_UNHALTED,PMC1,605595100000
+L3_ACCESS,CPMC0,18438770000
+L3_MISS,CPMC1,11094670000
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],144.3505,
+Runtime unhalted [s],341.4515,
+Clock [MHz],4249.9421,
+CPI,8.8066,
+L3 access bandwidth [MBytes/s],8175.1104,
+L3 access data volume [GBytes],1180.0813,
+L3 access rate [%],26.8139,
+L3 miss rate [%],16.1340,
+L3 miss ratio [%],60.1703,
+
+===> N: 4092 <==
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.797696433 GHz,
+TABLE,Region MatPtr_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.014652,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,61713860
+MAX_CPU_CLOCK,FIXC2,26736010
+RETIRED_INSTRUCTIONS,PMC0,117249000
+CPU_CLOCKS_UNHALTED,PMC1,58052630
+L3_ACCESS,CPMC0,2165681
+L3_MISS,CPMC1,2142096
+TABLE,Region MatPtr_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0147,
+Runtime unhalted [s],0.0343,
+Clock [MHz],4149.5641,
+CPI,0.4951,
+L3 access bandwidth [MBytes/s],9459.5491,
+L3 access data volume [GBytes],0.1386,
+L3 access rate [%],1.8471,
+L3 miss rate [%],1.8270,
+L3 miss ratio [%],98.9110,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.797696433 GHz,
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.014989,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,62624660
+MAX_CPU_CLOCK,FIXC2,27339460
+RETIRED_INSTRUCTIONS,PMC0,117249100
+CPU_CLOCKS_UNHALTED,PMC1,59742480
+L3_ACCESS,CPMC0,2150582
+L3_MISS,CPMC1,2130566
+TABLE,Region MatPtrRow_x_Vetor,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0150,
+Runtime unhalted [s],0.0348,
+Clock [MHz],4117.8622,
+CPI,0.5095,
+L3 access bandwidth [MBytes/s],9182.7403,
+L3 access data volume [GBytes],0.1376,
+L3 access rate [%],1.8342,
+L3 miss rate [%],1.8171,
+L3 miss ratio [%],99.0693,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.797696433 GHz,
+TABLE,Region MatPtr_x_MatPtr,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],316.739600,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1340038000000
+MAX_CPU_CLOCK,FIXC2,569398600000
+RETIRED_INSTRUCTIONS,PMC0,548264400000
+CPU_CLOCKS_UNHALTED,PMC1,1325262000000
+L3_ACCESS,CPMC0,126556900000
+L3_MISS,CPMC1,9289294000
+TABLE,Region MatPtr_x_MatPtr,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],316.7396,
+Runtime unhalted [s],745.4195,
+Clock [MHz],4230.7472,
+CPI,2.4172,
+L3 access bandwidth [MBytes/s],25571.9260,
+L3 access data volume [GBytes],8099.6416,
+L3 access rate [%],23.0832,
+L3 miss rate [%],1.6943,
+L3 miss ratio [%],7.3400,
+STRUCT,Info,3
+CPU name:,AMD Ryzen 7 5700U with Radeon Graphics         ,
+CPU type:,AMD K17 (Zen2) architecture,
+CPU clock:,1.797696433 GHz,
+TABLE,Region MatRow_x_MatRow,Group 1 Raw,L3,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],269.680000,
+call count,1,
+Event,Counter,HWThread 7
+ACTUAL_CPU_CLOCK,FIXC1,1138798000000
+MAX_CPU_CLOCK,FIXC2,484800300000
+RETIRED_INSTRUCTIONS,PMC0,548331300000
+CPU_CLOCKS_UNHALTED,PMC1,1125562000000
+L3_ACCESS,CPMC0,94420280000
+L3_MISS,CPMC1,9196526000
+TABLE,Region MatRow_x_MatRow,Group 1 Metric,L3,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],269.6800,
+Runtime unhalted [s],633.4763,
+Clock [MHz],4222.7967,
+CPI,2.0527,
+L3 access bandwidth [MBytes/s],22407.6606,
+L3 access data volume [GBytes],6042.8979,
+L3 access rate [%],17.2196,
+L3 miss rate [%],1.6772,
+L3 miss ratio [%],9.7400,
