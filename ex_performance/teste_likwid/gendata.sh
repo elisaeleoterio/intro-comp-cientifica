@@ -4,20 +4,27 @@ CMD_DIR=`dirname $0`
 
 PROG=${1:-operacoes}
 tipo=${2:-avx}
-CPU=${3:-7}
+CPU=${3:-3}
 
-DATA_DIR="resultados/${PROG}"
+DATA_DIR="resultados/"
 
 # Garante que o diretório de resultados existe para o script não quebrar
 mkdir -p ${DATA_DIR}
 
-METRICA="ENERGY FLOPS_DP L3 "
-TAMANHOS="128 200 300 512 1024 2000 2048 4092"
+METRICA="ENERGY FLOPS_DP L3CACHE "
+TAMANHOS="128 200 300 512 1024" #2000 2048 4092"
 
 echo "performance" > /sys/devices/system/cpu/cpufreq/policy${CPU}/scaling_governor
 
-echo "Iniciando testes com Likwid (Energia, FLOPS e L3)..."
+echo "Testes de tempo de execução"
 
+# Rodar teste para o tempo 
+for n in $TAMANHOS
+do
+    ./${PROG} -n ${n} >> ${DATA_DIR}/teste_${n}.txt
+done
+
+echo "Iniciando testes com Likwid (Energia, FLOPS e L3)..."
 for m in ${METRICA}
 do
     LIKWID_LOG="${DATA_DIR}/${m}_${tipo}.log"
@@ -31,7 +38,7 @@ do
         echo "--->>  Métrica: $m | N: $n | Comando: ./${PROG} $n" > /dev/tty
         
         # Executa o LIKWID gerando um CSV de saída (-O) para o arquivo temporário LIKWID_OUT
-        likwid-perfctr -O -C ${CPU} -g ${m} -o ${LIKWID_OUT} -m ./${PROG} -n ${n} > /dev/null
+        likwid-perfctr -C ${CPU} -g ${m} -o ${LIKWID_OUT} -m ./${PROG} -n ${n} > /dev/null
             
         echo -e "\n===> N: ${n} <==" >> ${LIKWID_LOG}
         # Adiciona a saída gerada ao log principal daquela métrica

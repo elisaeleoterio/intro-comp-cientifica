@@ -1,0 +1,4 @@
+Tempo MatPtr_x_Vetor: 0.081369
+Tempo MatPtrRow_x_Vetor: 0.043310
+Tempo MatPtr_x_MatPtr: 9.284002
+Tempo MatRow_x_MatRow: 9.941068

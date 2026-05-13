@@ -3,8 +3,7 @@
 #include <string.h>
 #include <getopt.h>
 #include <time.h>
-
-#include "likwid.h"
+#include <likwid.h>
 #include "matriz.h"
 #include "utils.h"
 
@@ -60,44 +59,40 @@ int main(int argc, char *argv[]) {
 
     vet = geraVetor(n, 0);
 
-#ifdef DEBUG
-    prnMatPtr(mPtr_1, n, n);
-    prnMatPtr(mPtr_2, n, n);
-    prnMatPtr(mPtrRow_1, n, n);
-    prnMatPtr(mPtrRow_2, n, n);
-    prnMat(mRow_1, n, n);
-    prnMat(mRow_2, n, n);
-    prnVetor(vet, n);
-#endif /* DEBUG */
 
     LIKWID_MARKER_INIT;
 
+    rtime_t t1, t2, t3, t4;
+    t1 = timestamp(); 
     LIKWID_MARKER_START("MatPtr_x_Vetor");
     multMatPtrVet(mPtr_1, vet, n, n, resPtr);
     LIKWID_MARKER_STOP("MatPtr_x_Vetor");
+    t1 = timestamp() - t1;
     
+    t2 = timestamp();
     LIKWID_MARKER_START("MatPtrRow_x_Vetor");
     multMatPtrVet(mPtrRow_1, vet, n, n, resPtrRow);
     LIKWID_MARKER_STOP("MatPtrRow_x_Vetor");
+    t2 = timestamp() - t2;
 
+    t3 = timestamp();
     LIKWID_MARKER_START("MatPtr_x_MatPtr");
     multMatMatPtr(mPtr_1, mPtr_2, n, resMatPtr);
     LIKWID_MARKER_STOP("MatPtr_x_MatPtr");
+    t3 = timestamp() - t3;
 
+    t4 = timestamp();
     LIKWID_MARKER_START("MatRow_x_MatRow");
     multMatMat(mRow_1, mRow_2, n, resMatRow);
     LIKWID_MARKER_STOP("MatRow_x_MatRow");
+    t4 = timestamp() - t4;
 
     LIKWID_MARKER_CLOSE;
 
-#ifdef DEBUG
-    prnVetor(resPtr, n);
-    prnVetor(resPtrRow, n);
-    prnVetor(resRow, n);
-    prnMat(resMatRow, n, n);
-    prnMatPtr(resMatPtr, n, n);
-    prnMatPtr(resMatPtrRow, n, n);
-#endif /* DEBUG */
+    printf("Tempo MatPtr_x_Vetor: %f\n", t1);
+    printf("Tempo MatPtrRow_x_Vetor: %f\n", t2);
+    printf("Tempo MatPtr_x_MatPtr: %f\n", t3);
+    printf("Tempo MatRow_x_MatRow: %f\n", t4);
 
     liberaMatPtr(mPtr_1, n);
     liberaMatPtr(mPtr_2, n);

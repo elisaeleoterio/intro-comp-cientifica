@@ -1,9 +1,9 @@
 
 PROG = operacoes
-CPU = 7
+CPU = 3
 
 CC = gcc -std=c11 -g
-LIKWID_HOME=/home/elisaeleoterio/likwid
+LIKWID_HOME=/home/soft/likwid
 OBJS = matriz.o utils.o
 CFLAGS =  -O3 -mavx2 -march=native -I${LIKWID_HOME}/include -DLIKWID_PERFMON
 LFLAGS = -lm -L${LIKWID_HOME}/lib -llikwid
