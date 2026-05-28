@@ -24,16 +24,17 @@ import re, sys, os
 #  "L2CACHE" : "L2 miss ratio",
 #  "L2CACHE" : "L2 miss rate",
 #  "L3" : "L3 bandwidth \[*MBytes/s\]*",
-#  "MEM" : "Memory bandwidth \[*MBytes/s\]*",
+#  ,
 #  "MEM" : "Memory read bandwidth",
 #  "MEM" : "Memory write bandwidth",
 #  "TIME" : "Runtime \(RDTSC\) \[*s\]*",
 #  "ENERGY" : "Power \[*W\]*"
+        #    "FLOPS_AVX" : "AVX DP \[*MFLOP/s\]*",
+        #    "ENERGY" : "Energy \[*J\]*"
 
-campos = { "L3CACHE" : "L3 miss ratio",
-           "FLOPS_DP" : "DP \[*MFLOP/s\]*",
-           "FLOPS_AVX" : "AVX DP \[*MFLOP/s\]*",
-           "ENERGY" : "Energy \[*J\]*"
+campos = { "L2CACHE" : r"L2 miss ratio",
+           "FLOPS_DP" : r"DP \[*MFLOP/s\]*",
+           "MEM" : r"Memory bandwidth \[*MBytes/s\]*"
         }
 
 # 'STRUCT,Info' inicia Região

@@ -11,7 +11,7 @@ CC = gcc
 #-O3   -march=native  -mavx   -fopt-info-vec;
 CFLAGS = -std=c11 -g -O3 -march=native -mavx -fopt-info-vec -DLIKWID_PERFMON -I${LIKWID_HOME}/include
 # Flags de ligação (Linker)
-LDFLAGS = -L${LIKWID_HOME}/lib
+LDFLAGS = -L${LIKWID_HOME}/lib -Wl,-rpath=${LIKWID_HOME}/lib
 LDLIBS = -llikwid -lm #adição da biblioteca do likwid e da math
 
 PROG = broyden

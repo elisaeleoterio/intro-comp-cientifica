@@ -29,9 +29,10 @@ double *criaEResolveBroyden(int n, double *x, FILE *output) {
 
 // Calcula a matriz com as derivadas parciais da matriz de broyden
 double **calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
-    
+    char marker_jacob[50];
+    snprintf(marker_jacob, sizeof(marker_jacob), "Jacobiana_%d", n);
     // TODO Ver se calculo o custo por iteração ou a soma das iterações mesmo
-    LIKWID_MARKER_START("Jacobiana");
+    LIKWID_MARKER_START(marker_jacob);
     rtime_t aux = timestamp();
 
     // TODO Verificar forma de alocar a matriz
@@ -54,7 +55,7 @@ double **calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
     J[n-1][n-2] = -1;
     J[n-1][n-1] = 3 - 4*x[n-1];
     
-    LIKWID_MARKER_STOP("Jacobiana");
+    LIKWID_MARKER_STOP(marker_jacob);
     aux = timestamp() - aux;
     *tempJacobiana += aux;
     return J;
@@ -65,7 +66,9 @@ double **calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
 // TODO Otimizar usando Gauss-Seidel ou Gauss-Jacobi por ser uma matriz k-diagonal
 double *resolverSistemaLinear(double **J, int n, double *x, rtime_t *tempSL, FILE *output) {
     
-    LIKWID_MARKER_START("Sistema Linear.");
+    char marker_sl[50];
+    snprintf(marker_sl, sizeof(marker_sl), "Linear_%d", n);
+    LIKWID_MARKER_START(marker_sl);
     rtime_t aux = timestamp();
 
     // Vetor de coeficientes independentes == Matriz de Broyden em X negados 
@@ -110,9 +113,10 @@ double *resolverSistemaLinear(double **J, int n, double *x, rtime_t *tempSL, FIL
         delta[i] /= J[i][i];
     }
 
-    LIKWID_MARKER_STOP("Sistema Linear.");
+    LIKWID_MARKER_STOP(marker_sl);
     aux = timestamp() - aux;
     *tempSL += aux;
+    free(F);
     return delta;
 }
 
@@ -124,8 +128,11 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
     fprintf(output, "Vetor resultante da matriz de Broyden avaliada em X.\n");
     imprimirVetor(output, F, n);
     fprintf(output, "\n");
+
+    char marker_newton[50];
+    snprintf(marker_newton, sizeof(marker_newton), "Newton_%d", n);
     
-    LIKWID_MARKER_START("Método de Newton Inteiro.");
+    LIKWID_MARKER_START(marker_newton);
     *tempoNewton = timestamp();
 
     // Implementação do Algoritmo de Newton
@@ -134,7 +141,7 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
         imprimirX(output, x, n, i);
         
         if (maxVetor(F, n) < epsilon) {
-            LIKWID_MARKER_STOP("Método de Newton Inteiro.");
+            LIKWID_MARKER_STOP(marker_newton);
             *tempoNewton = timestamp() - *tempoNewton;
             return x;
         }
@@ -152,12 +159,18 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
             x[i] = x[i] + delta[i];
         }
         if (maxVetor(delta, n) < epsilon) {
-            LIKWID_MARKER_STOP("Método de Newton Inteiro.");
+            LIKWID_MARKER_STOP(marker_newton);
             *tempoNewton = timestamp() - *tempoNewton;
             return x;
         }
+
+        for (int j = 0; j < n; j++) {
+            free(J[j]); // Libera cada linha
+        }
+        free(J);        // Libera o vetor principal
+        free(delta);
     }
-    LIKWID_MARKER_STOP("Método de Newton Inteiro.");
+    LIKWID_MARKER_STOP(marker_newton);
     *tempoNewton = timestamp() - *tempoNewton;
     return NULL;
 }

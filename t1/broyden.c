@@ -36,13 +36,13 @@ int main(int argc, char *argv[]) {
     float  xo, epsilon;
 
     // fprintf(output, "Insira o tamanho da matriz: ");
-    scanf("%d", &n);
+    scanf("%d %f %f", &n, &epsilon, &xo);
 
-    // fprintf(output, "Insira o valor inicial das variáveis (x0): ");
-    scanf("%f", &xo);
+    // // fprintf(output, "Insira o valor inicial das variáveis (x0): ");
+    // scanf("%f", &xo);
 
-    // fprintf(output, "Insira o valor de epsilon: ");
-    scanf("%f", &epsilon);
+    // // fprintf(output, "Insira o valor de epsilon: ");
+    // scanf("%f", &epsilon);
 
     // Cria vetor das variáveis iniciais
     double *x = malloc(n * sizeof(double));
@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
 
     // Resolução da Matriz de Broyden com Método de Newton
     LIKWID_MARKER_INIT;
-    rtime_t tempoNewton, tempoJacobiana, tempoSL;
+    rtime_t tempoNewton = 0, tempoJacobiana = 0, tempoSL = 0;
     x = metodoDeNewton(output, x, max, epsilon, n, &tempoNewton, &tempoJacobiana, &tempoSL);
     LIKWID_MARKER_CLOSE;
 
