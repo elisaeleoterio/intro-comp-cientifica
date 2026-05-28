@@ -137,7 +137,6 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
 
     // Implementação do Algoritmo de Newton
     for (size_t i = 0; i < max; i++) {
-        
         imprimirX(output, x, n, i);
         
         if (maxVetor(F, n) < epsilon) {
@@ -147,13 +146,13 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
         }
 
         double **J = calcularJacobiana(x, n, tempoJacobiana);
-        fprintf(output, "Matriz Jacobiana avaliada em X.\n");
-        imprimirMatriz(output, J, n);
+        // fprintf(output, "Matriz Jacobiana avaliada em X.\n");
+        // imprimirMatriz(output, J, n);
 
         double *delta = resolverSistemaLinear(J, n, x, tempoSL, output); // delta é um vetor de variáveis
-        fprintf(output, "Vetor delta.\n");
-        imprimirVetor(output, delta, n);
-        fprintf(output, "\n");
+        // fprintf(output, "Vetor delta.\n");
+        // imprimirVetor(output, delta, n);
+        // fprintf(output, "\n");
 
         for (size_t i = 0; i < n; i++) {
             x[i] = x[i] + delta[i];

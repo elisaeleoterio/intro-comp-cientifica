@@ -44,10 +44,11 @@ void imprimirMatriz(FILE *output, double **J, int n) {
 }
 
 void imprimirX(FILE *output, double *x, int n, size_t i) {
-    fprintf(output, "Iteração %ld.\n", i);
+    // fprintf(output, "Iteração %ld.\n", i);
     for (size_t j = 0; j < n; j++) {
-        fprintf(output, "x%ld: %.4f\n", j, x[j]);
+        fprintf(output, "x%ld = %.4f\n", j, x[j]);
     }
+    fprintf(output, "#\n");
 }
 
 void imprimirTempos(FILE *output, rtime_t tempoNewton, rtime_t tempoJacobiana, rtime_t tempoSL) {
