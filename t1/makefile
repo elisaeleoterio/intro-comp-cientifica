@@ -1,27 +1,23 @@
-# Nome do executável final
-PROG = broyden
-
-# Arquivo fonte único
-SRC = broyden.c
-OBJS = $(SRC:.c=.o)
-
 # Caminho da instalação do LIKWID (Ajuste este caminho se necessário)
 LIKWID_HOME = /home/ubuntu/likwid-5.5.1
 
 CC = gcc
-
 # Flags de compilação exigidas:
 # -O3: Otimização de alto nível
 # -march=native: Otimiza para a arquitetura da máquina atual
-# -mavx: Habilita suporte a instruções AVX (exigido no trabalho)
+# -mavx: Habilita suporte a instruções AVX
 # -fopt-info-vec: Fornece informações sobre a vetorização de loops
-CFLAGS = -std=c11 -g -O3 -march=native -mavx -fopt-info-vec -DLIKWID_PERFMON -I${LIKWID_HOME}/include
 
+#-O3   -march=native  -mavx   -fopt-info-vec;
+CFLAGS = -std=c11 -g -O3 -march=native -mavx -fopt-info-vec -DLIKWID_PERFMON -I${LIKWID_HOME}/include
 # Flags de ligação (Linker)
 LDFLAGS = -L${LIKWID_HOME}/lib
-LDLIBS = -llikwid -lm
+LDLIBS = -llikwid -lm #adição da biblioteca do likwid e da math
 
-.PHONY: all debug clean
+PROG = broyden
+OBJS = broyden.o utils.o matriz.o
+
+.PHONY: all debug clean # não sei oque isso aqui faz
 
 # Regra principal
 all: $(PROG)
@@ -30,13 +26,17 @@ all: $(PROG)
 $(PROG): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS) $(LDLIBS)
 
-# Regra para compilar o código-fonte em objeto
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+# Regra para compilar o broyden.c
+broyden.o: broyden.c utils.h matriz.h
+	$(CC) $(CFLAGS) -c broyden.c
 
-# Regra para depuração (desativa otimizações)
-debug: CFLAGS += -DDEBUG -O0
-debug: all
+# Regra para criar o utils.o
+utils.o: utils.c utils.h
+	$(CC) $(CFLAGS) -c utils.c
+
+# Regra para criar o matriz.o
+matriz.o: matriz.c matriz.h
+	$(CC) $(CFLAGS) -c matriz.c
 
 # Limpeza de arquivos temporários e executáveis
 clean:
