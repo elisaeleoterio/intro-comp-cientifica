@@ -10,7 +10,7 @@ mkdir -p ${DATA_DIR}
 
 # Grupos do LIKWID solicitados na especificação
 METRICA="L2CACHE MEM FLOPS_DP"
-TAMANHOS="32" # 64 128 256 512 1000 2000 4000 8000 9000 10000 20000"
+TAMANHOS="32 64 128 256 512 1000 2000 4000 8000 9000 10000 20000"
 
 ARQUIVO_LIKWID="${DATA_DIR}/dados_likwid.csv"
 ARQUIVO_TEMPOS="${DATA_DIR}/dados_tempos.csv"
@@ -19,7 +19,7 @@ ARQUIVO_TEMPOS="${DATA_DIR}/dados_tempos.csv"
 rm -f ${ARQUIVO_LIKWID} ${ARQUIVO_TEMPOS}
 
 echo "Metrica,N,Tempo_Total,Tempo_Jacobiana,Tempo_SL" > ${ARQUIVO_TEMPOS}
-
+echo "N, L2CACHE, MEM, FLOPS_DP" > ${ARQUIVO_LIKWID}
 echo "performance" > /sys/devices/system/cpu/cpufreq/policy${CPU}/scaling_governor
 
 echo "Iniciando testes com Likwid..."
