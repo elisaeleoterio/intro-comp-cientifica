@@ -8,6 +8,8 @@
 #include "utils.h"
 #include "matriz.h"
 
+#define MAX_GAUSS_SEIDEL 1000
+
 
 // Monta a matriz de Broyden resolvida a partir do vetor X seguindo a estrutura
 // f1(x) = -2x1² + 3x1 - 2x2 + 1
@@ -52,8 +54,7 @@ double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE
     LIKWID_MARKER_START("Sistema_Linear");
     rtime_t aux = timestamp();
 
-    double *erro_vet = malloc(n * sizeof(double));
-    double *delta = malloc(n * sizeof(double));
+    double *delta = calloc(n, sizeof(double));
     double erro = 1.0 + epsilon;
     int iter = 0;
     while (erro > epsilon && iter < max_iter) {
@@ -68,7 +69,7 @@ double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE
 
         for (int i = 1; i < n - 1; i++) {
             old = delta[i];
-            delta[i] = (-F[i] + 1 * delta[i - 1] + 2 * delta[i + 1])/ d[n - 1];
+            delta[i] = (-F[i] + 1 * delta[i - 1] + 2 * delta[i + 1])/ d[i];
             if (fabs(delta[i] - old) > max_dif) {
                 max_dif = fabs(delta[i] - old);
             }
@@ -114,7 +115,7 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
         double *J = calcularJacobiana(x, n, tempoJacobiana);
 
         // TODO Rever se a passagem de parâmetros está certa
-        double *delta = resolverSistemaLinear(J, n, F, tempoSL, output, epsilon, max);
+        double *delta = resolverSistemaLinear(J, n, F, tempoSL, output, epsilon, MAX_GAUSS_SEIDEL);
 
         for (size_t i = 0; i < n; i++) {
             x[i] = x[i] + delta[i];

@@ -16,10 +16,10 @@ rtime_t timestamp (void) {
 
 // Encontra o maior elemento de um vetor
 double maxVetor(double *vetor, int n) {
-    double max = vetor[0];
+    double max = fabs(vetor[0]);
     for (size_t i = 0; i < n; i++) {
-        if (vetor[i] > max) {
-            max = vetor[i];
+        if (fabs(vetor[i]) > max) {
+            max = fabs(vetor[i]);
         }
     }
     return max;   
