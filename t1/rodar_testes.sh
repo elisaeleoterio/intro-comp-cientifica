@@ -5,7 +5,7 @@ PROG=${1:-broyden}
 tipo=${2:-sem_otimizacao}
 CPU=${3:-0}
 
-DATA_DIR="resultados"
+DATA_DIR="resultados_nao_otimizados"
 mkdir -p ${DATA_DIR}
 
 # Grupos do LIKWID solicitados na especificação
