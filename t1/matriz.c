@@ -45,7 +45,7 @@ double **calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
     
     for (int i = 1; i < n - 1; i++) {
         J[i][i-1] = -1;
-        J[i][i] = 3 - 4*x[i+1];
+        J[i][i] = 3 - 4*x[i];
         J[i][i+1] = -2;
     }
     J[n-1][n-2] = -1;
@@ -72,7 +72,7 @@ double *resolverSistemaLinear(double **J, int n, double *F, rtime_t *tempSL, FIL
     for (int i = 0; i < n; ++i) {
         int iMax = i;
         for (int k = i + 1; k < n; ++k)
-            if (J[k][i] > J[iMax][i])
+            if (fabs(J[k][i]) > fabs(J[iMax][i]))
                 iMax = k;
         if (iMax != i)
         {
