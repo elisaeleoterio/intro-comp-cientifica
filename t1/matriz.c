@@ -107,7 +107,6 @@ double *resolverSistemaLinear(double **J, int n, double *F, rtime_t *tempSL, FIL
     LIKWID_MARKER_STOP("Sistema_Linear");
     aux = timestamp() - aux;
     *tempSL += aux;
-    free(F);
     return delta;
 }
 

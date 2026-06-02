@@ -73,6 +73,7 @@ int main(int argc, char *argv[]) {
         imprimirVetor(output, x, n);
     }
 
+    free(x);
     fclose(output);
     return 0;
 }
