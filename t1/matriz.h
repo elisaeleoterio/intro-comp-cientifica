@@ -10,8 +10,8 @@
 #include "utils.h"
 
 double *resolveBroyden(int n, double *x);
-double **calcularJacobiana(double *x, int n, rtime_t *tempJacobiana);
-double *resolverSistemaLinear(double **J, int n, double *x, rtime_t *tempSL, FILE *output);
+double *calcularJacobiana(double *x, int n, rtime_t *tempJacobiana);
+double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE *output, double epsilon, int max_iter);
 double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, rtime_t *tempoNewton, rtime_t *tempoJacobiana, rtime_t *tempoSL);
 
 #endif
