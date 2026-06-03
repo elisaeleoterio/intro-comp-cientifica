@@ -5,6 +5,7 @@
 #include <time.h>
 #include <string.h>
 #include <likwid.h>
+#include <math.h>
 
 #include "utils.h"
 

@@ -31,8 +31,9 @@ double *criaEResolveBroyden(int n, double *x, FILE *output) {
 
 // Calcula a matriz Jacobiana com as derivadas parciais da matriz de Broyden
 double *calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
-    
-    LIKWID_MARKER_START("Jacobiana");
+    char marker_jac[50];
+    snprintf(marker_jac, sizeof(marker_jac), "Jacobiana_%d", n);
+    LIKWID_MARKER_START(marker_jac);
     rtime_t aux = timestamp();
 
     // Vetor para armazenar a diagonal principal 
@@ -41,7 +42,7 @@ double *calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
     for (int i = 0; i < n; i++) {
         d[i] = 3 - 4 * x[i];
     }
-    LIKWID_MARKER_STOP("Jacobiana");
+    LIKWID_MARKER_STOP(marker_jac);
     aux = timestamp() - aux;
     *tempJacobiana += aux;
     return d;
@@ -50,8 +51,9 @@ double *calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
 
 // Resolve o Sistema Linear J(X(i))𝚫(i) = -F(X(i))
 double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE *output, double epsilon, int max_iter) {
-    
-    LIKWID_MARKER_START("Sistema_Linear");
+    char marker_sl[50];
+    snprintf(marker_sl, sizeof(marker_sl), "Sistema_Linear_%d", n);
+    LIKWID_MARKER_START(marker_sl);
     rtime_t aux = timestamp();
 
     double *delta = calloc(n, sizeof(double));
@@ -74,6 +76,7 @@ double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE
                 max_dif = fabs(delta[i] - old);
             }
         }
+        old = delta[n - 1];
         delta[n - 1] = (-F[n - 1] + 1 * delta[n - 2]) / d[n - 1];
         if (fabs(delta[n - 1] - old) > max_dif) {
             max_dif = fabs(delta[n - 1] - old);
@@ -83,7 +86,7 @@ double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE
         iter ++; 
     }
 
-    LIKWID_MARKER_STOP("Sistema_Linear");
+    LIKWID_MARKER_STOP(marker_sl);
     aux = timestamp() - aux;
     *tempSL += aux;
     return delta;
@@ -93,9 +96,10 @@ double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE
 // TODO Rever liberações de memória
 double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, rtime_t *tempoNewton, rtime_t *tempoJacobiana, rtime_t *tempoSL) {
     // TODO verificar parâmetros
+    char marker_new[50];
+    snprintf(marker_new, sizeof(marker_new), "Newton_%d", n);
     
-    
-    LIKWID_MARKER_START("Newton");
+    LIKWID_MARKER_START(marker_new);
     *tempoNewton = timestamp();
     
     // Implementação do Algoritmo de Newton com máximo de 25 iterações
@@ -106,7 +110,7 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
         double *F = criaEResolveBroyden(n, x, output);
 
         if (maxVetor(F, n) < epsilon) {
-            LIKWID_MARKER_STOP("Newton");
+            LIKWID_MARKER_STOP(marker_new);
             *tempoNewton = timestamp() - *tempoNewton;
             free(F);
             return x;
@@ -122,7 +126,7 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
         }
 
         if (maxVetor(delta, n) < epsilon) {
-            LIKWID_MARKER_STOP("Newton");
+            LIKWID_MARKER_STOP(marker_new);
             *tempoNewton = timestamp() - *tempoNewton;
             free(J);
             free(delta);
@@ -134,7 +138,7 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
         free(delta);
         free(F);
     }
-    LIKWID_MARKER_STOP("Newton");
+    LIKWID_MARKER_STOP(marker_new);
     *tempoNewton = timestamp() - *tempoNewton;
     return NULL;
 }
