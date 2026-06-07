@@ -8,6 +8,9 @@
 #include "utils.h"
 #include "matriz.h"
 
+#define MAX_ITER 1000
+#define TOLERANCIA 1e-6
+
 // Monta a matriz de Broyden a partir do vetor X seguindo a estrutura
 // f1(x) = -2x1² + 3x1 - 2x2 + 1
 // fi(x) = -2xi² + 3xi - xi-1 - 2xi+1 + 1, se 2<= i<= (n-1)
@@ -62,7 +65,7 @@ double **calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
 }
 
 
-// Faz a resolução do sistema linear usando Eliminação de Gauss e Retrossubstituição
+// Faz a resolução do sistema linear usando Gauss-Seidel sem otimização para matriz k-diagonal
 double *resolverSistemaLinear(double **J, int n, double *F, rtime_t *tempSL, FILE *output) {
     
     char marker_sl[50];
@@ -73,41 +76,34 @@ double *resolverSistemaLinear(double **J, int n, double *F, rtime_t *tempSL, FIL
     for (size_t i = 0; i < n; i++) {
         F[i] = (-1) * F[i];
     }
+
+    double *delta = calloc(n, sizeof(double));
     
-    // Eliminação de Gauss
-    for (int i = 0; i < n; ++i) {
-        int iMax = i;
-        for (int k = i + 1; k < n; ++k)
-            if (fabs(J[k][i]) > fabs(J[iMax][i]))
-                iMax = k;
-        if (iMax != i)
-        {
-            double *tmp, aux;
-            tmp = J[i];
-            J[i] = J[iMax];
-            J[iMax] = tmp;
+    for (int k = 0; k < MAX_ITER; k++) {
+        double erro_maximo = 0.0;
 
-            aux = F[i];
-            F[i] = F[iMax];
-            F[iMax] = aux;
+        for (int i = 0; i < n; i++) {
+            double soma = 0.0;
+            
+            for (int j = 0; j < n; j++) {
+                if (j != i) {
+                    soma += J[i][j] * delta[j];
+                }
+            }
+
+            double novo_valor = (F[i] - soma) / J[i][i];
+
+            double erro_atual = fabs(novo_valor - delta[i]);
+            if (erro_atual > erro_maximo) {
+                erro_maximo = erro_atual;
+            }
+
+            delta[i] = novo_valor;
         }
 
-        for (int k = i + 1; k < n; ++k) {
-            double m = J[k][i] / J[i][i];
-            J[k][i] = 0.0;
-            for (int j = i + 1; j < n; ++j)
-                J[k][j] -= J[i][j] * m;
-            F[k] -= F[i] * m;
+        if (erro_maximo < TOLERANCIA) {
+            break; 
         }
-    }
-
-    double *delta = malloc(n * sizeof(double));
-    // Retrossubstituição
-    for (int i = n - 1; i >= 0; --i) {
-        delta[i] = F[i];
-        for (int j = i + 1; j < n; ++j)
-            delta[i] -= J[i][j] * delta[j];
-        delta[i] /= J[i][i];
     }
 
     LIKWID_MARKER_STOP(marker_sl);
@@ -117,7 +113,7 @@ double *resolverSistemaLinear(double **J, int n, double *F, rtime_t *tempSL, FIL
 }
 
 
-
+// só vai convergir se |3 - 4x| > 3
 double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, rtime_t *tempoNewton, rtime_t *tempoJacobiana, rtime_t *tempoSL) {
 
     char marker_new[50];

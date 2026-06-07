@@ -37,7 +37,6 @@ double *calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
     rtime_t aux = timestamp();
 
     // Vetor para armazenar a diagonal principal 
-    // (única que não é constante) diferentes de 0 da matriz Jacobiana
     double *d = malloc(n * sizeof(double));
     for (int i = 0; i < n; i++) {
         d[i] = 3 - 4 * x[i];
@@ -49,7 +48,7 @@ double *calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
 }
 
 
-// Resolve o Sistema Linear J(X(i))𝚫(i) = -F(X(i))
+// Resolve o Sistema Linear J(X(i))𝚫(i) = -F(X(i)) usando o algortmo de Gauss-Seidel para matrizes de k-diagonais
 double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE *output, double epsilon, int max_iter) {
     char marker_sl[50];
     snprintf(marker_sl, sizeof(marker_sl), "Sistema_Linear_%d", n);
@@ -59,43 +58,44 @@ double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE
     double *delta = calloc(n, sizeof(double));
     double erro = 1.0 + epsilon;
     int iter = 0;
+    
     while (erro > epsilon && iter < max_iter) {
+        
         double max_dif = 0.0;
-        double old;
-        old = delta[0];
-        delta[0] = (-F[0] + 2 * delta[1])/d[0];
+        double old, diff;
 
-        if (fabs(delta[0] - old) > max_dif) {
-            max_dif = fabs(delta[0] - old);
-        }
+        old = delta[0];
+        delta[0] = (-F[0] + 2 * delta[1]) / d[0];
+        diff = fabs(delta[0] - old);
+        // Evita quebra de branch prediction -> Maximizando o uso do pipeline
+        max_dif = (diff > max_dif) ? diff : max_dif; 
 
         for (int i = 1; i < n - 1; i++) {
             old = delta[i];
-            delta[i] = (-F[i] + 1 * delta[i - 1] + 2 * delta[i + 1])/ d[i];
-            if (fabs(delta[i] - old) > max_dif) {
-                max_dif = fabs(delta[i] - old);
-            }
-        }
-        old = delta[n - 1];
-        delta[n - 1] = (-F[n - 1] + 1 * delta[n - 2]) / d[n - 1];
-        if (fabs(delta[n - 1] - old) > max_dif) {
-            max_dif = fabs(delta[n - 1] - old);
+            delta[i] = (-F[i] + 1 * delta[i - 1] + 2 * delta[i + 1]) / d[i];
+            
+            diff = fabs(delta[i] - old);
+            // Operador ternário para evitar uso de if e quebrar pipeline
+            max_dif = (diff > max_dif) ? diff : max_dif;
         }
 
-        erro = max_dif;
-        iter ++; 
+        old = delta[n - 1];
+        delta[n - 1] = (-F[n - 1] + 1 * delta[n - 2]) / d[n - 1];
+        diff = fabs(delta[n - 1] - old);
+        max_dif = (diff > max_dif) ? diff : max_dif;
+
+        erro = max_dif; // Se quiser erro relativo: erro = max_dif / norma_infinita_de_delta
+        iter++; 
     }
 
     LIKWID_MARKER_STOP(marker_sl);
     aux = timestamp() - aux;
     *tempSL += aux;
+    
     return delta;
 }
 
-
-// TODO Rever liberações de memória
 double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, rtime_t *tempoNewton, rtime_t *tempoJacobiana, rtime_t *tempoSL) {
-    // TODO verificar parâmetros
     char marker_new[50];
     snprintf(marker_new, sizeof(marker_new), "Newton_%d", n);
     
@@ -118,7 +118,6 @@ double *metodoDeNewton(FILE *output, double *x, int max, double epsilon, int n, 
 
         double *J = calcularJacobiana(x, n, tempoJacobiana);
 
-        // TODO Rever se a passagem de parâmetros está certa
         double *delta = resolverSistemaLinear(J, n, F, tempoSL, output, epsilon, MAX_GAUSS_SEIDEL);
 
         for (size_t i = 0; i < n; i++) {
