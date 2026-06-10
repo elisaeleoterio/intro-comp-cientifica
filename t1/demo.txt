@@ -1,0 +1,113 @@
+--------------------------------------------------------------------------------
+CPU name:	AMD Ryzen 5 8600G w/ Radeon 760M Graphics      
+CPU type:	AMD K19 (Zen4) architecture
+CPU stepping:	2
+********************************************************************************
+Hardware Thread Topology
+********************************************************************************
+Sockets:		1
+CPU dies:		1
+Cores per socket:	6
+Threads per core:	2
+--------------------------------------------------------------------------------
+HWThread        Thread        Core        Die        Socket        Available
+0               0             0           0          0             *                
+1               0             1           0          0             *                
+2               0             2           0          0             *                
+3               0             3           0          0             *                
+4               0             4           0          0             *                
+5               0             5           0          0             *                
+6               1             0           0          0             *                
+7               1             1           0          0             *                
+8               1             2           0          0             *                
+9               1             3           0          0             *                
+10              1             4           0          0             *                
+11              1             5           0          0             *                
+--------------------------------------------------------------------------------
+Socket 0:		( 0 6 1 7 2 8 3 9 4 10 5 11 )
+--------------------------------------------------------------------------------
+********************************************************************************
+Cache Topology
+********************************************************************************
+Level:			1
+Size:			32 kB
+Type:			Data cache
+Associativity:		8
+Number of sets:		64
+Cache line size:	64
+Cache type:		Non Inclusive
+Shared by threads:	2
+Cache groups:		( 0 6 ) ( 1 7 ) ( 2 8 ) ( 3 9 ) ( 4 10 ) ( 5 11 )
+--------------------------------------------------------------------------------
+Level:			2
+Size:			1 MB
+Type:			Unified cache
+Associativity:		8
+Number of sets:		2048
+Cache line size:	64
+Cache type:		Non Inclusive
+Shared by threads:	2
+Cache groups:		( 0 6 ) ( 1 7 ) ( 2 8 ) ( 3 9 ) ( 4 10 ) ( 5 11 )
+--------------------------------------------------------------------------------
+Level:			3
+Size:			16 MB
+Type:			Unified cache
+Associativity:		16
+Number of sets:		16384
+Cache line size:	64
+Cache type:		Non Inclusive
+Shared by threads:	12
+Cache groups:		( 0 6 1 7 2 8 3 9 4 10 5 11 )
+--------------------------------------------------------------------------------
+********************************************************************************
+NUMA Topology
+********************************************************************************
+NUMA domains:		1
+--------------------------------------------------------------------------------
+Domain:			0
+Processors:		( 0 6 1 7 2 8 3 9 4 10 5 11 )
+Distances:		10
+Free memory:		22075.8 MB
+Total memory:		27685 MB
+--------------------------------------------------------------------------------
+
+
+********************************************************************************
+Graphical Topology
+********************************************************************************
+Socket 0:
++-------------------------------------------------------------+
+| +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ |
+| |  0 6  | |  1 7  | |  2 8  | |  3 9  | | 4 10  | | 5 11  | |
+| +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ |
+| +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ |
+| | 32 kB | | 32 kB | | 32 kB | | 32 kB | | 32 kB | | 32 kB | |
+| +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ |
+| +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ |
+| |  1 MB | |  1 MB | |  1 MB | |  1 MB | |  1 MB | |  1 MB | |
+| +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ |
+| +---------------------------------------------------------+ |
+| |                          16 MB                          | |
+| +---------------------------------------------------------+ |
++-------------------------------------------------------------+
+Group name	Description
+--------------------------------------------------------------------------------
+     TLB	TLB miss rate/ratio
+    NUMA	Socket interconnect and NUMA traffic
+MEMWRITE	Main memory write bandwidth in MBytes/s
+ MEMREAD	Main memory read bandwidth in MBytes/s
+     MEM	Main memory read bandwidth in MBytes/s
+ L3CACHE	L3 cache miss rate/ratio (experimental)
+      L3	L3 cache bandwidth in MBytes/s
+ L2CACHE	L2 cache miss rate/ratio (experimental)
+      L2	L2 cache bandwidth in MBytes/s (experimental)
+  ICACHE	Instruction cache miss rate/ratio
+FLOPS_SP	Single Precision MFLOP/s
+FLOPS_DP	Double Precision MFLOP/s
+  ENERGY	Power and Energy consumption
+  DIVIDE	Divide unit information
+    DATA	Load to store ratio
+     CPI	Cycles per instruction
+   CLOCK	Cycles per instruction
+   CACHE	Data cache miss rate/ratio
+  BRANCH	Branch prediction miss rate/ratio
