@@ -18,17 +18,17 @@ ARQUIVO_TEMPOS="${DATA_DIR}/dados_tempos.csv"
 rm -f ${ARQUIVO_LIKWID} ${ARQUIVO_TEMPOS}
 
 echo "Metrica,N,Tempo_Total,Tempo_Jacobiana,Tempo_SL" > ${ARQUIVO_TEMPOS}
-echo "N, Newton, Jacobiana, Sistema Linear" > ${ARQUIVO_LIKWID}
 echo "performance" > /sys/devices/system/cpu/cpufreq/policy${CPU}/scaling_governor
 
 echo "Iniciando testes com Likwid..."
 
 EPSILON=0.0
-XO=0.0
+XO=-1.0
 
 for m in ${METRICA}
 do
     ARQUIVO_LIKWID="${DATA_DIR}/dados_likwid_${m}.csv"
+    echo "N, Newton, Jacobiana, Sistema Linear" > ${ARQUIVO_LIKWID}
     echo "MÉTRICA: $m"
     
     for n in $TAMANHOS

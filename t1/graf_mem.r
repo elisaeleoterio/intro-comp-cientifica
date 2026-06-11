@@ -1,4 +1,4 @@
-rm(list=ls())
+# rm(list=ls())
 
 if (!require("ggplot2")) install.packages("ggplot2"); library("ggplot2")
 
@@ -50,10 +50,10 @@ ggplot(dados_completos)+
 ### Comparativo Sistema Linear ###
 ggplot(dados_completos)+
   stat_summary(fun = "mean", geom = "line", 
-               aes(x=N, y=SL, color = Versao), 
+               aes(x=N, y=Sistema.Linear, color = Versao), 
                linewidth = 0.5) +
   stat_summary(fun = "mean", geom = "point", 
-               aes(x=N, y=SL, color = Versao), 
+               aes(x=N, y=Sistema.Linear, color = Versao), 
                size = 2) +
   scale_x_continuous(trans='log2')+
   scale_y_continuous(trans='log10')+

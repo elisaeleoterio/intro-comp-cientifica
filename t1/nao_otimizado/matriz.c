@@ -11,13 +11,13 @@
 #define MAX_ITER 1000
 #define TOLERANCIA 1e-6
 
+/* VERSÃO NÃO OTIMIZADA */
+
 // Monta a matriz de Broyden a partir do vetor X seguindo a estrutura
 // f1(x) = -2x1² + 3x1 - 2x2 + 1
 // fi(x) = -2xi² + 3xi - xi-1 - 2xi+1 + 1, se 2<= i<= (n-1)
 // fn(x) = -2xn² + 3xn - xn-1
 double *criaEResolveBroyden(int n, double *x, FILE *output) {
-
-    // TODO Verificar se é a melhor maneira de alcoar a matriz
     double *F = malloc(n * sizeof(double));
     verifica_alocacao(F, output);
 
@@ -64,7 +64,6 @@ double **calcularJacobiana(double *x, int n, rtime_t *tempJacobiana) {
     return J;
 }
 
-
 // Faz a resolução do sistema linear usando Gauss-Seidel sem otimização para matriz k-diagonal
 double *resolverSistemaLinear(double **J, int n, double *F, rtime_t *tempSL, FILE *output) {
     
@@ -84,23 +83,18 @@ double *resolverSistemaLinear(double **J, int n, double *F, rtime_t *tempSL, FIL
 
         for (int i = 0; i < n; i++) {
             double soma = 0.0;
-            
             for (int j = 0; j < n; j++) {
                 if (j != i) {
                     soma += J[i][j] * delta[j];
                 }
             }
-
             double novo_valor = (F[i] - soma) / J[i][i];
-
             double erro_atual = fabs(novo_valor - delta[i]);
             if (erro_atual > erro_maximo) {
                 erro_maximo = erro_atual;
             }
-
             delta[i] = novo_valor;
         }
-
         if (erro_maximo < TOLERANCIA) {
             break; 
         }

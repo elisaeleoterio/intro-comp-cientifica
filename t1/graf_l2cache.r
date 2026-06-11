@@ -1,8 +1,8 @@
-rm(list=ls())
+# rm(list=ls())
 
 if (!require("ggplot2")) install.packages("ggplot2"); library("ggplot2")
 
-setwd("~/aulas/quinto_semestre/intro-comp-cientifica/t1/")
+setwd("~/intro-comp-cientifica/t1/")
 
 dados_otimizados=read.csv("otimizado/resultados_otimizados/dados_likwid_L2CACHE.csv")
 dados_nao_otimizados = read.csv("nao_otimizado/resultados_nao_otimizados/dados_likwid_L2CACHE.csv")
@@ -50,10 +50,10 @@ ggplot(dados_completos)+
 ### Comparativo Sistema Linear ###
 ggplot(dados_completos)+
   stat_summary(fun = "mean", geom = "line", 
-               aes(x=N, y=SL, color = Versao), 
+               aes(x=N, y=Sistema.Linear, color = Versao), 
                linewidth = 0.5) +
   stat_summary(fun = "mean", geom = "point", 
-               aes(x=N, y=SL, color = Versao), 
+               aes(x=N, y=Sistema.Linear, color = Versao), 
                size = 2) +
   scale_x_continuous(trans='log2')+
   scale_y_continuous(trans='log10')+
@@ -62,3 +62,4 @@ ggplot(dados_completos)+
   scale_color_manual(name="Versão",
                      values = cores_versao)+
   theme_bw()
+

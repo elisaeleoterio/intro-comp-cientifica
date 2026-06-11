@@ -8,8 +8,9 @@
 #include "utils.h"
 #include "matriz.h"
 
-#define MAX_GAUSS_SEIDEL 1000
+#define MAX_GAUSS_SEIDEL 2000
 
+/* VERSÃO OTIMIZADA */
 
 // Monta a matriz de Broyden resolvida a partir do vetor X seguindo a estrutura
 // f1(x) = -2x1² + 3x1 - 2x2 + 1
@@ -84,7 +85,7 @@ double *resolverSistemaLinear(double *d, int n, double *F, rtime_t *tempSL, FILE
         diff = fabs(delta[n - 1] - old);
         max_dif = (diff > max_dif) ? diff : max_dif;
 
-        erro = max_dif; // Se quiser erro relativo: erro = max_dif / norma_infinita_de_delta
+        erro = max_dif;
         iter++; 
     }
 
