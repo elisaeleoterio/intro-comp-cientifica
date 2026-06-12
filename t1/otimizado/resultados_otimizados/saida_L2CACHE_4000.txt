@@ -100027,8 +100027,8 @@ x3998 = -0.5960
 x3999 = -0.4164
 #
 ###########
-# Tempo Total: 339.008847 (em milisegundos)
-# Tempo Jacobiana: 2.018110 (em milisegundos)
-# Tempo SL: 324.386864 (em milisegundos)
+# Tempo Total: 302.849786 (em milisegundos)
+# Tempo Jacobiana: 2.006486 (em milisegundos)
+# Tempo SL: 288.129841 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

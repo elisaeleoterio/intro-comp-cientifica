@@ -3227,8 +3227,8 @@ x126 = -0.5960
 x127 = -0.4164
 #
 ###########
-# Tempo Total: 9.186530 (em milisegundos)
-# Tempo Jacobiana: 1.913929 (em milisegundos)
-# Tempo SL: 2.964119 (em milisegundos)
+# Tempo Total: 9.067650 (em milisegundos)
+# Tempo Jacobiana: 1.901227 (em milisegundos)
+# Tempo SL: 2.940339 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

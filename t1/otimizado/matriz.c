@@ -8,7 +8,7 @@
 #include "utils.h"
 #include "matriz.h"
 
-#define MAX_GAUSS_SEIDEL 2000
+#define MAX_GAUSS_SEIDEL 1000
 
 /* VERSÃO OTIMIZADA */
 

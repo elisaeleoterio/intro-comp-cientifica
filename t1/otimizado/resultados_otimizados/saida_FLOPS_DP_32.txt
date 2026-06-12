@@ -827,8 +827,8 @@ x30 = -0.5960
 x31 = -0.4164
 #
 ###########
-# Tempo Total: 7.957138 (em milisegundos)
-# Tempo Jacobiana: 1.912976 (em milisegundos)
-# Tempo SL: 2.001313 (em milisegundos)
+# Tempo Total: 7.808159 (em milisegundos)
+# Tempo Jacobiana: 1.878749 (em milisegundos)
+# Tempo SL: 1.963680 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

@@ -1627,8 +1627,8 @@ x62 = -0.5960
 x63 = -0.4164
 #
 ###########
-# Tempo Total: 8.098109 (em milisegundos)
-# Tempo Jacobiana: 1.875917 (em milisegundos)
-# Tempo SL: 2.149343 (em milisegundos)
+# Tempo Total: 8.205577 (em milisegundos)
+# Tempo Jacobiana: 1.893915 (em milisegundos)
+# Tempo SL: 2.189265 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

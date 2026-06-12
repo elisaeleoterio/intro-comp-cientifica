@@ -250027,8 +250027,8 @@ x9998 = -0.5960
 x9999 = -0.4164
 #
 ###########
-# Tempo Total: 832.244212 (em milisegundos)
-# Tempo Jacobiana: 2.285529 (em milisegundos)
-# Tempo SL: 804.387343 (em milisegundos)
+# Tempo Total: 750.050097 (em milisegundos)
+# Tempo Jacobiana: 2.281096 (em milisegundos)
+# Tempo SL: 722.371945 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

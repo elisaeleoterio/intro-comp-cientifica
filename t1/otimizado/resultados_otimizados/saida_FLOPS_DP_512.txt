@@ -12827,8 +12827,8 @@ x510 = -0.5960
 x511 = -0.4164
 #
 ###########
-# Tempo Total: 26.327088 (em milisegundos)
-# Tempo Jacobiana: 1.995039 (em milisegundos)
-# Tempo SL: 18.774712 (em milisegundos)
+# Tempo Total: 25.856391 (em milisegundos)
+# Tempo Jacobiana: 1.960444 (em milisegundos)
+# Tempo SL: 18.624657 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

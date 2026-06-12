@@ -200027,8 +200027,8 @@ x7998 = -0.5960
 x7999 = -0.4164
 #
 ###########
-# Tempo Total: 667.568431 (em milisegundos)
-# Tempo Jacobiana: 2.052872 (em milisegundos)
-# Tempo SL: 644.224322 (em milisegundos)
+# Tempo Total: 599.778621 (em milisegundos)
+# Tempo Jacobiana: 2.037115 (em milisegundos)
+# Tempo SL: 576.555777 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

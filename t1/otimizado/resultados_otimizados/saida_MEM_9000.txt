@@ -225027,8 +225027,8 @@ x8998 = -0.5960
 x8999 = -0.4164
 #
 ###########
-# Tempo Total: 749.714935 (em milisegundos)
-# Tempo Jacobiana: 2.198243 (em milisegundos)
-# Tempo SL: 724.222603 (em milisegundos)
+# Tempo Total: 674.030294 (em milisegundos)
+# Tempo Jacobiana: 2.254173 (em milisegundos)
+# Tempo SL: 648.237116 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

@@ -6427,8 +6427,8 @@ x254 = -0.5960
 x255 = -0.4164
 #
 ###########
-# Tempo Total: 13.763485 (em milisegundos)
-# Tempo Jacobiana: 2.179700 (em milisegundos)
-# Tempo SL: 6.443734 (em milisegundos)
+# Tempo Total: 13.610491 (em milisegundos)
+# Tempo Jacobiana: 2.179427 (em milisegundos)
+# Tempo SL: 6.339639 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.

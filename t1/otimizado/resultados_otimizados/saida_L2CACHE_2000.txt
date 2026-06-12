@@ -50027,8 +50027,8 @@ x1998 = -0.5960
 x1999 = -0.4164
 #
 ###########
-# Tempo Total: 172.319216 (em milisegundos)
-# Tempo Jacobiana: 2.055289 (em milisegundos)
-# Tempo SL: 161.657985 (em milisegundos)
+# Tempo Total: 155.679110 (em milisegundos)
+# Tempo Jacobiana: 2.023737 (em milisegundos)
+# Tempo SL: 145.214364 (em milisegundos)
 ###########
 Não foi possível encontrar uma solução.
